@@ -1,0 +1,56 @@
+@import "./button.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 14px;
+
+  --space-subhead: 0.75rem;
+}
+
+.text-title {
+  font-size: 3rem;
+  color: blue;
+}
+
+.text-subhead {
+  font-size: 20px;
+}
+.text-subhead + .text-body {
+  margin: var(--space-subhead) 0 0 0;
+}
+
+.text-body + .button {
+  margin: 2rem 0 0 0;
+}
+
+.feature {
+  max-width: 400px;
+  margin: 2rem;
+  padding: 1rem 1rem 1.5rem;
+  border: 1px solid;
+}
+
+button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 0 1rem;
+  line-height: 1;
+}
+[data-variant="primary"] {
+  background: #1b74e4;
+  color: #fff;
+}
+.secondary {
+  background: #e4e6eb;
+  color: #333;
+}
+[data-size="small"] {
+  height: 24px;
+  font-size: 12px;
+}

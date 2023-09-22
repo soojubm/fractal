@@ -1,0 +1,19 @@
+{
+  "title": "Dialogs",
+  "status": "ready",
+  "context": {
+    "size": "medium",
+    "label": "This is the default banner",
+    "title": "title",
+    "description": "description"
+  },
+  "variants": [
+    {
+      "name": "alert",
+      "button": "@button"
+    },
+    {
+      "name": "confirm"
+    }
+  ]
+}
