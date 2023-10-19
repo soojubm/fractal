@@ -14,6 +14,18 @@
       }
     },
     {
+      "name": "secondary",
+      "context": {
+        "variant": "secondary"
+      }
+    },
+    {
+      "name": "tertiary",
+      "context": {
+        "variant": "tertiary"
+      }
+    },
+    {
       "name": "small",
       "context": {
         "variant": "primary",

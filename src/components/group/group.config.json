@@ -1,0 +1,24 @@
+{
+  "title": "Button",
+  "status": "ready",
+  "context": {
+    "variant": "default",
+    "size": "medium",
+    "label": "This is the default banner"
+  },
+  "variants": [
+    {
+      "name": "Button Group",
+      "context": {
+        "variant": "primary"
+      }
+    },
+    {
+      "name": "Radio Group",
+      "context": {
+        "variant": "primary",
+        "size": "small"
+      }
+    }
+  ]
+}

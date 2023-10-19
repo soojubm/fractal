@@ -1,0 +1,5 @@
+title: "A simple blockquote component"
+status: wip
+context:
+  text: "체크박스"
+  citation: "Fractal Docs"

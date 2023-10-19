@@ -1,4 +1,24 @@
-<div class="textfield">
-  <label>label</label>
-  <input type="text" />
+<div style="display:flex;flex-direction:column;gap:1rem;">
+  <div class="textfield">
+    <label class="textfield-label" for="id">이메일 주소</label>
+    <input class="textfield-input" type="email" id="id" placeholder="soojubm@gmail.com" />
+  </div>
+  
+  <div class="textfield">
+    <label class="textfield-label" for="id">비밀번호</label>
+    <i class="textfield-prefix"></i>
+    <input class="textfield-input" type="password" id="id" placeholder="숫자, 특수문자 포함 8자 이상" />
+  </div>
+  
+  <div class="textfield">
+    <label class="textfield-label" for="id">성별</label>
+    <select class="textfield-input" id="id">
+      <option selected="true">옵션 1</option>
+      <option>옵션 2</option>
+    </select>
+  
+    <i class="textfield-suffix">
+      <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="m17 8-5-5-5 5M17 16l-5 5-5-5"></path></svg>
+    </i>
+  </div>
 </div>

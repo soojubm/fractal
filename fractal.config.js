@@ -93,10 +93,10 @@ fractal.web.set("builder.dest", __dirname + "/build")
 
 fractal.docs.set("path", __dirname + "/src/docs")
 fractal.components.set("path", __dirname + "/src/components")
+fractal.components.set("default.preview", "@preview")
 
 // fractal.components.set("ext", ".handlebars")
 // fractal.docs.set("ext", ".html")
-// fractal.components.set("default.preview", "@preview");
 
 // fractal.components.set("default.status", "wip")
 // fractal.docs.set("default.status", "draft")
