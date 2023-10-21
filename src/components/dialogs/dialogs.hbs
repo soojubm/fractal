@@ -1,7 +1,8 @@
-<aside class="dialog">
-  <h3 data-variant="subhead">{{title}}</h3>
-  <p data-variant="body">{{description}}</p>
-  <div class="group">
-    {{> @button}}
-  </div>
+{{!-- <button class="button" data-variant="{{variant}}" data-size="{{size}}" data-status="">{{label}}</button> --}}
+
+<aside class="tile" style="max-width: 320px;">
+  <h3 class="text" data-variant="subhead" style="margin:-.5rem 0 0;">{{title}}</h3>
+  <p class="text" data-variant="body" style="margin-top:.25rem;margin-bottom:1.5rem;">{{description}}</p>
+  {{!-- <p>Click here if you like this! {{> @button}}</p> --}}
+  <button data-variant="primary">confirm</button>
 </aside>
