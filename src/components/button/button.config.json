@@ -6,7 +6,7 @@
     "size": "medium",
     "label": "This is the default banner"
   },
-  "variants": [
+  "test": [
     {
       "name": "primary",
       "context": {

@@ -14,6 +14,8 @@
 .checkbox {
   position: relative;
   --checkbox-size: var(--size-tiny);
+  --checkbox-size: 20px;
+  --checkbox-radius: 50%;
 }
 
 input[type="checkbox"] {
@@ -36,20 +38,20 @@ input[type="checkbox"] ~ label:before {
   width: var(--checkbox-size);
   height: var(--checkbox-size);
   border: var(--border);
-  border-radius: 4px;
+  border-radius: var(--checkbox-radius);
   background: var(--color-background);
   box-sizing: border-box;
 }
 input[type="checkbox"] ~ label:after {
   content: "";
   display: none;
-  width: 7px;
-  height: 2px;
-  border-left: 1px solid;
-  border-bottom: 1px solid;
+  width: 8px;
+  height: 3px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
   border-color: var(--gray200);
   position: absolute;
-  left: 4px;
+  left: 5px;
   top: 6px;
   transform: rotate(-50deg);
 }
