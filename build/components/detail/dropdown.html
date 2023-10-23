@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.3" type="text/css">
 
 
-<title>Tag | Ring System component library</title>
+<title>Dropdown | Ring System component library</title>
 
 </head>
 <body>
@@ -61,14 +61,14 @@
             <div class="Frame-inner" id="pjax-container">
             
 
-<div class="Pen" data-behaviour="pen" id="pen-1f6856bc75c5132a81aab40cc5bbe1ba">
+<div class="Pen" data-behaviour="pen" id="pen-23593a32e6d8d0e5160a9c60b4e4341e">
 
     
 
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
-        <a class="Pen-previewLink" href="../preview/tag.html" title="Preview">
-            Tag
+        <a class="Pen-previewLink" href="../preview/dropdown.html" title="Preview">
+            Dropdown
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -91,13 +91,13 @@
 </div>
 
 
-    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-1f6856bc75c5132a81aab40cc5bbe1ba">
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-23593a32e6d8d0e5160a9c60b4e4341e">
     <div class="Preview-wrapper" data-role="resizer">
         <div class="Preview-resizer">
              <iframe
                 class="Preview-iframe"
                 data-role="window"
-                src="../preview/tag.html"
+                src="../preview/dropdown.html"
                  style=""
                 marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
             </iframe>
@@ -111,7 +111,7 @@
     <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
 
     <div class="Pen-panel Pen-info" data-role="info">
-    <div class="Browser" data-behaviour="browser" id="browser-1f6856bc75c5132a81aab40cc5bbe1ba">
+    <div class="Browser" data-behaviour="browser" id="browser-23593a32e6d8d0e5160a9c60b4e4341e">
 
     
 
@@ -120,7 +120,7 @@
         
         
         <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
-            <a href="#browser-1f6856bc75c5132a81aab40cc5bbe1ba-panel-html">
+            <a href="#browser-23593a32e6d8d0e5160a9c60b4e4341e-panel-html">
                 HTML
             </a>
         </li>
@@ -128,7 +128,7 @@
         
         
         <li class="Browser-tab Browser-tab--info" data-role="tab">
-            <a href="#browser-1f6856bc75c5132a81aab40cc5bbe1ba-panel-info">
+            <a href="#browser-23593a32e6d8d0e5160a9c60b4e4341e-panel-info">
                 Info
             </a>
         </li>
@@ -136,7 +136,7 @@
         
         
         <li class="Browser-tab Browser-tab--notes" data-role="tab">
-            <a href="#browser-1f6856bc75c5132a81aab40cc5bbe1ba-panel-notes">
+            <a href="#browser-23593a32e6d8d0e5160a9c60b4e4341e-panel-notes">
                 Notes
             </a>
         </li>
@@ -148,24 +148,32 @@
 
     
     
-<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-1f6856bc75c5132a81aab40cc5bbe1ba-panel-html">
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-23593a32e6d8d0e5160a9c60b4e4341e-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display:flex;gap:var(--space-2)&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tag&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;primary&quot;</span>&gt;</span>primary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tag&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;secondary&quot;</span>&gt;</span>secondary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tag&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;tertiary&quot;</span>&gt;</span>tertiary<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>trigger<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;tile&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;elevated&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;max-width:180px;padding:var(--space-1) var(--space-4);&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;menuitem&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;menuitem&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>👽<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        Edit
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;menuitem&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;menuitem&quot;</span>&gt;</span>
+        Edit
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;menuitem&quot;</span>&gt;</span>
+        Delete
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
 
     
-    <div class="Browser-panel" data-role="tab-panel" id="browser-1f6856bc75c5132a81aab40cc5bbe1ba-panel-info">
+    <div class="Browser-panel" data-role="tab-panel" id="browser-23593a32e6d8d0e5160a9c60b4e4341e-panel-info">
     <ul class="Meta">
         <li class="Meta-item">
             <strong class="Meta-key">Handle:</strong>
-            <span class="Meta-value">@tag</span>
+            <span class="Meta-value">@dropdown</span>
         </li>
         
         
@@ -173,12 +181,12 @@
             <strong class="Meta-key">Preview:</strong>
             <span class="Meta-value">
                 <ul>
-                    <li><a data-no-pjax href="../preview/tag.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <li><a data-no-pjax href="../preview/dropdown.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
 </a></li>
-                    <li><a data-no-pjax href="../render/tag.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <li><a data-no-pjax href="../render/dropdown.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
@@ -188,7 +196,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/tag/tag.hbs</span>
+            <span class="Meta-value">src\components\dropdown\dropdown.hbs</span>
         </li>
         
         
@@ -196,7 +204,7 @@
 </div>
 
     
-    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-1f6856bc75c5132a81aab40cc5bbe1ba-panel-notes">
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-23593a32e6d8d0e5160a9c60b4e4341e-panel-notes">
     <div class="Prose Prose--condensed">
         
         <p class="Browser-isEmptyNote">No notes defined.</p>
@@ -318,6 +326,210 @@
                 
                 
                 
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./avatar.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="avatar"
+                data-handle="avatar"
+            >
+                <span>Avatar</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./badge.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="badge"
+                data-handle="badge"
+            >
+                <span>Badge</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--default.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button"
+                data-handle="button"
+            >
+                <span>Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./checkbox.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="checkbox"
+                data-handle="checkbox"
+            >
+                <span>Checkbox</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./radio.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="radio"
+                data-handle="radio"
+            >
+                <span>Radio</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./switch.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="switch"
+                data-handle="switch"
+            >
+                <span>Switch</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
     
         
         
@@ -644,142 +856,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./avatar.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="avatar"
-                data-handle="avatar"
-            >
-                <span>Avatar</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./badge.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="badge"
-                data-handle="badge"
-            >
-                <span>Badge</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./button--default.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="button"
-                data-handle="button"
-            >
-                <span>Button</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./checkbox.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="checkbox"
-                data-handle="checkbox"
-            >
-                <span>Checkbox</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./dialogs--default.html"
                 data-role="tree-link"
                 
@@ -788,6 +864,40 @@
                 data-handle="dialogs"
             >
                 <span>Dialogs</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./dropdown.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="dropdown"
+                data-handle="dropdown"
+            >
+                <span>Dropdown</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -882,108 +992,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./radio.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="radio"
-                data-handle="radio"
-            >
-                <span>Radio</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./switch.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="switch"
-                data-handle="switch"
-            >
-                <span>Switch</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./tag.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="tag"
-                data-handle="tag"
-            >
-                <span>Tag</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./textfield--default.html"
                 data-role="tree-link"
                 
@@ -1034,6 +1042,141 @@
                 Back
             </button>
         </div>
+        
+    
+        
+    
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="button">
+                
+<div class="Tree" data-behaviour="tree" id="tree-button-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Button Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--default.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--default"
+                data-handle="button"
+            >
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--leading.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--leading"
+                data-handle="button"
+            >
+                <span>Leading</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--tailing.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--tailing"
+                data-handle="button"
+            >
+                <span>Tailing</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+    
+        
+    
         
     
         
@@ -1176,137 +1319,6 @@
         
     
         
-    
-        
-    
-        
-            
-            <div class="Navigation-group" data-role="variant-group" data-component="button">
-                
-<div class="Tree" data-behaviour="tree" id="tree-button-variants">
-    <div class="Tree-header">
-        <h3 class="Tree-title">Button Variants</h3>
-
-        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
-            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
-
-        </button>
-    </div>
-    <ul class="Tree-items Tree-depth-1">
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./button--default.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="button--default"
-                data-handle="button"
-            >
-                <span>Default</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./button--leading.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="button--leading"
-                data-handle="button"
-            >
-                <span>Leading</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./button--tailing.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="button--tailing"
-                data-handle="button"
-            >
-                <span>Tailing</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-    </ul>
-</div>
-
-            </div>
-        
-    
-        
-    
-        
             
             <div class="Navigation-group" data-role="variant-group" data-component="dialogs">
                 
@@ -1432,6 +1444,8 @@
         
     
         
+    
+        
             
             <div class="Navigation-group" data-role="variant-group" data-component="group">
                 
@@ -1554,12 +1568,6 @@
 </div>
 
             </div>
-        
-    
-        
-    
-        
-    
         
     
         

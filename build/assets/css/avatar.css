@@ -1,0 +1,39 @@
+/* {{! // 96 40 32 24 16 }} */
+.avatar {
+  position: relative;
+}
+.avatar-badge {
+  display: none;
+  width: 8px;
+  height: 8px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background: #1ab240;
+}
+img {
+  display: block;
+  width: 100%;
+}
+[data-size="a1"] {
+  width: 16px;
+  height: 16px;
+}
+[data-size="a2"] {
+  width: 24px;
+  height: 24px;
+}
+[data-size="a3"] {
+  width: 32px;
+  height: 32px;
+}
+[data-size="medium"] {
+  width: var(--size-10);
+  height: var(--size-10);
+}
+[data-size="a5"] {
+  width: 96px;
+  height: 96px;
+}

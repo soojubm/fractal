@@ -26,3 +26,24 @@
   font-weight: var(--font-weight-normal);
   /* color: var(--color-text-light); */
 }
+
+/* ring */
+.text[data-variant="heading4"] {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 135%; /* 32.4px */
+}
+.text[data-variant="heading5"] {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+}
+.text[data-variant="body1"] {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.text[data-variant="body2"] {
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
