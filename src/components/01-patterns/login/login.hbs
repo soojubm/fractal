@@ -1,27 +1,25 @@
 <form style="max-width:312px;margin:0 auto;">
-  <h2 class="text" variant="title">로그인</h2>
-  <p class="text" variant="body">로그인 관련 안내 텍스트가 들어가요.<br />아이디와 비밀번호를 입력하세요.</p>
-  <fieldset style="display:flex;flex-direction:column;gap:1rem;margin:32px 0 0;">
+  <header style="text-align: center;">
+    <h2 class="text" variant="heading4">로그인</h2>
+    <p class="text" variant="body2" style="margin-top:var(--space-2);">로그인 관련 안내 텍스트가 들어가요.<br />아이디와 비밀번호를 입력하세요.</p>
+  </header>
+  <fieldset style="display:flex;flex-direction:column;gap:1rem;margin:var(--space-8) 0 0;">
     <div class="textfield">
-      <label class="textfield-label" for="id">이메일 주소</label>
+      {{! <label class="textfield-label" for="id">이메일 주소</label> }}
       <input class="textfield-input" type="email" id="id" placeholder="soojubm@gmail.com" />
     </div>
-
     <div class="textfield">
-      <label class="textfield-label" for="id">비밀번호</label>
-      <i class="textfield-prefix"></i>
+      {{! <label class="textfield-label" for="id">비밀번호</label> }}
       <input class="textfield-input" type="password" id="id" placeholder="숫자, 특수문자 포함 8자 이상" />
     </div>
-
-    <div class="checkbox">
-      <input type="checkbox" id="checkbox" />
-      <label for="checkbox">로그인 상태 유지</label>
-    </div>
-
-    <button class="button" data-variant="primary">로그인</button>
   </fieldset>
+  <div class="checkbox" style="margin:var(--space-1) 0 var(--space-3);padding:var(--space-2) 0;">
+    <input type="checkbox" id="checkbox" />
+    <label for="checkbox">로그인 상태 유지</label>
+  </div>
+  <button class="button" data-variant="primary" style="width:100%;">로그인</button>
 
-  <footer>
+  <footer class="login-utils" style="margin:var(--space-8) 0 0 0;">
     <a href="#">아이디 찾기</a>
     <a href="#">비밀번호 찾기</a>
     <a href="#">회원가입</a>

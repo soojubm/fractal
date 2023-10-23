@@ -21,17 +21,16 @@
   --font-line-height-large: 1.8;
   --font-line-height: 1.5;
 
-  --size-huge: 5rem;
-  --size-large: 3rem;
-  --size-medium: 2rem;
-  --size-small: 1.5rem;
-  --size-tiny: 1rem;
+  --size-10: 2.5rem;
+  --size-12: 3rem;
 
   --space-05: 0.125rem;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
   --space-4: 1rem;
+
+  /* section */
   --space-8: 2rem;
 
   --radius: 6px;

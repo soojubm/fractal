@@ -58,7 +58,7 @@ img {
   width: 32px;
   height: 32px;
 }
-[data-size="a4"] {
+[data-size="medium"] {
   width: 40px;
   height: 40px;
 }
@@ -104,21 +104,9 @@ img {
   /* margin: var(--space-3) 0; */
 }
 
-.badge {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: var(--spacing-1, 4px) var(--spacing-025, 10px);
-
-  gap: 10px;
-
-  border-radius: var(--radius-radius-full, 999px);
-  background: var(--color-semantic-primary-subtle, #f1f3fe);
-
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%; /* 15.6px */
+.tile[data-variant="elevated"] {
+  border-color: #cdd0d4;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
 }
 
 .tile {
@@ -157,13 +145,8 @@ img {
 .card-content {
   /* padding: 0 var(--space-6) var(--space-6); */
 }
-.card-title,
-.text[data-variant="subhead"] {
+.card-title {
   margin: var(--space-4) 0 0 0;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 30px */
 }
 .card-subtitle,
 .text[data-variant="body"] {
@@ -179,48 +162,6 @@ img {
   margin: 24px 0 0 0;
   font-size: 16px;
   color: #808890;
-}
-
-/* {{! // 96 40 32 24 16 }} */
-.avatar {
-  position: relative;
-}
-.avatar-badge {
-  display: none;
-  width: 8px;
-  height: 8px;
-  border: 4px solid #fff;
-  border-radius: 50%;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  background: #1ab240;
-}
-img {
-  display: block;
-  width: 100%;
-}
-.avatar {
-}
-[data-size="a1"] {
-  width: 16px;
-  height: 16px;
-}
-[data-size="a2"] {
-  width: 24px;
-  height: 24px;
-}
-[data-size="a3"] {
-  width: 32px;
-  height: 32px;
-}
-[data-size="a4"] {
-  width: 40px;
-  height: 40px;
-}
-[data-size="a5"] {
-  width: 96px;
-  height: 96px;
 }
 
 .action-menu {
@@ -253,4 +194,25 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 15.6px */
+}
+.menulist {
+  display: flex;
+  flex-direction: column;
+}
+.menuitem {
+  display: block;
+  line-height: 32px;
+}
+.menuitem:hover {
+  background: red;
+}
+
+.login-utils {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+}
+.login-utils a {
+  color: var(--color-text);
 }
