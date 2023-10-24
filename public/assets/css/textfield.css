@@ -115,7 +115,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .textfield-label {
   display: block;
+  margin: 0 0 var(--space-2);
   line-height: var(--size-small);
+  font-weight: var(--font-weight-bold);
 }
 .textfield-label small {
   margin: 0 0 0 var(--space-1);
@@ -132,7 +134,8 @@ input[type="search"]::-webkit-search-results-decoration {
   color: var(--color-text);
 }
 .textfield-input:focus {
-  box-shadow: var(--status-hover);
+  /* box-shadow: var(--status-hover); */
+  outline: 3px solid var(--color-point);
 }
 .textfield-input:read-only {
   color: var(--color-text-light);

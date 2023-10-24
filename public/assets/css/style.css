@@ -1,70 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-  /* font-size: 14px; */
-
-  --space-4: 1rem;
-  --space-6: 1.5rem;
-
-  --border: 1px solid #e5e6e8;
-  --radius: 8px;
-
-  --elevation: 0;
-  --shadow: 0;
-
-  --space-subhead: 0.75rem;
-
-  --color-primary: rgba(80, 80, 220, 1);
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
-    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
-}
-
 .group {
   display: flex;
   gap: var(--space-2);
-}
-.avatar {
-  position: relative;
-}
-.avatar-badge {
-  width: 8px;
-  height: 8px;
-  border: 4px solid #fff;
-  border-radius: 50%;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  background: #1ab240;
-}
-img {
-  display: block;
-  width: 100%;
-}
-.avatar {
-}
-[data-size="a1"] {
-  width: 16px;
-  height: 16px;
-}
-[data-size="a2"] {
-  width: 24px;
-  height: 24px;
-}
-[data-size="a3"] {
-  width: 32px;
-  height: 32px;
-}
-[data-size="medium"] {
-  width: 40px;
-  height: 40px;
-}
-[data-size="a5"] {
-  width: 96px;
-  height: 96px;
 }
 
 .item {
@@ -216,3 +152,5 @@ img {
 .login-utils a {
   color: var(--color-text);
 }
+
+/* .util-color-accent? */

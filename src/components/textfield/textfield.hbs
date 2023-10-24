@@ -4,10 +4,13 @@
     <input class="textfield-input" type="text" id="textfield1" placeholder="hidden label" />
   </div>
   
-
+  <div class="textfield">
+    {{!-- <label class="textfield-label" for="id">이메일 주소</label> --}}
+    <input class="textfield-input" type="text" id="textfield1" placeholder="focused" style="outline: 3px solid var(--color-point);" />
+  </div>
 
   <div class="textfield">
-    <label class="textfield-label" for="id">이메일 주소</label>
+    <label class="textfield-label" for="id">이메일 주소 <abbr>필수</abbr></label>
     <input class="textfield-input" type="email" id="id" placeholder="soojubm@gmail.com" />
   </div>
   
@@ -15,6 +18,7 @@
     <label class="textfield-label" for="id">비밀번호</label>
     <i class="textfield-prefix"></i>
     <input class="textfield-input" type="password" id="id" placeholder="숫자, 특수문자 포함 8자 이상" />
+    <p class="textfield-helper">helper text</p>
   </div>
   
   <div class="textfield">

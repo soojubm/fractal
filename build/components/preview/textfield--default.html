@@ -5,13 +5,9 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
 
-    <style>
-
-      body { font-family: var(--font-family); }
-
-    </style>
-    <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/variables.css" />
+
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
@@ -34,10 +30,12 @@
     <input class="textfield-input" type="text" id="textfield1" placeholder="hidden label" />
   </div>
   
-
+  <div class="textfield">
+    <input class="textfield-input" type="text" id="textfield1" placeholder="focused" style="outline: 3px solid var(--color-point);" />
+  </div>
 
   <div class="textfield">
-    <label class="textfield-label" for="id">이메일 주소</label>
+    <label class="textfield-label" for="id">이메일 주소 <abbr>필수</abbr></label>
     <input class="textfield-input" type="email" id="id" placeholder="soojubm@gmail.com" />
   </div>
   
@@ -45,6 +43,7 @@
     <label class="textfield-label" for="id">비밀번호</label>
     <i class="textfield-prefix"></i>
     <input class="textfield-input" type="password" id="id" placeholder="숫자, 특수문자 포함 8자 이상" />
+    <p class="textfield-helper">helper text</p>
   </div>
   
   <div class="textfield">
