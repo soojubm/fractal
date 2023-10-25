@@ -114,14 +114,13 @@ input[type="search"]::-webkit-search-results-decoration {
   --textfield-text-color: 0;
 }
 .textfield-label {
-  display: block;
+  display: flex;
+  align-items: center;
+  /* TODO 6px */
+  gap: 6px;
   margin: 0 0 var(--space-2);
   line-height: var(--size-small);
   font-weight: var(--font-weight-bold);
-}
-.textfield-label small {
-  margin: 0 0 0 var(--space-1);
-  color: var(--color-text-light);
 }
 .textfield-input {
   display: block;

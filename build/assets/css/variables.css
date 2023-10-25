@@ -49,6 +49,8 @@
 
   --color-primary: #5050dc;
   --color-point: rgba(38, 217, 217, 1);
+  --color-danger: #c70e0e;
+
   --color-text: var(--gray800);
 
   --color-primary-light: null;

@@ -242,7 +242,8 @@ dl dd {
   color: var(--gray0);
 }
 ::placeholder {
-  color: var(--color-text-light);
+  /* color: var(--color-text-light); */
+  color: var(--color-content-tertiary, #808890);
 }
 
 /* // writing-mode: horizontal-tb / vertical-rl / vertical-lr;

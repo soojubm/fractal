@@ -12,10 +12,21 @@
 }
 
 .checkbox {
+  display: flex;
+  align-items: center;
+  /* 이상 링크 */
+
+  padding: var(--space-2) 0;
+
   position: relative;
   --checkbox-size: var(--size-tiny);
   --checkbox-size: 20px;
   --checkbox-radius: 50%;
+}
+.checkbox-link {
+  margin: 0 0 0 auto;
+  line-height: var(--checkbox-size);
+  text-decoration: underline;
 }
 
 input[type="checkbox"] {
@@ -45,14 +56,14 @@ input[type="checkbox"] ~ label:before {
 input[type="checkbox"] ~ label:after {
   content: "";
   display: none;
-  width: 8px;
+  width: 7px;
   height: 3px;
   border-left: 2px solid;
   border-bottom: 2px solid;
   border-color: var(--gray200);
   position: absolute;
-  left: 5px;
-  top: 6px;
+  left: 6px;
+  top: 7px;
   transform: rotate(-50deg);
 }
 
