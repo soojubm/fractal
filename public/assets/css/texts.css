@@ -53,6 +53,15 @@
   line-height: 130%;
 }
 
+.text[data-variant="label3"] {
+  color: var(--color-content-tertiary, #808890);
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 15.6px */
+}
+
 .text[data-color="primary"] {
   color: var(--color-primary);
 }

@@ -1,28 +1,37 @@
-<h1 class="text" data-variant="title">타이틀 Title</h1>
+{{! <h1 class="text" data-variant="title">타이틀 Title</h1>
 <h2 class="text" data-variant="subhead">서브헤드 Subhead</h2>
 <p class="text" data-variant="body-large">바디 텍스트 Body text large</p>
 <p class="text" data-variant="body">바디 텍스트 Body text</p>
-<p class="text-caption" data-variant="caption">캡션 Caption</p>
+<p class="text-caption" data-variant="caption">캡션 Caption</p> }}
 
+<style>
+  h6 { margin-bottom: var(--space-1); }
+</style>
+
+{{! <p style="margin-bottom:1rem;border-bottom:1px solid;padding-bottom:.5rem;color:#999;">ring</p> }}
+<div class="group">
+  <p class="text" data-variant="body" data-color="primary">* 강조텍스트</p>
+  <p class="text" data-variant="body" data-color="point">* 강조텍스트</p>
+  <p class="text" data-variant="body" data-color="danger">* 강조텍스트</p>
+</div>
 <br /><br />
-<p style="margin-bottom:1rem;border-bottom:1px solid;padding-bottom:.5rem;color:#999;">ring</p>
-<p class="text" data-variant="body" data-color="primary">*</p>
-<p class="text" data-variant="body" data-color="point">*</p>
-<p class="text" data-variant="body" data-color="danger">*</p>
 
 <h6>heading4</h6>
 <p class="text" data-variant="heading4">{{heading}}</p>
-<span class="badge">로그인</span>
+<div style="margin-top:var(--space-2)"><span class="badge">로그인</span></div>
 <br /><br />
 <h6>heading5</h6>
 <p class="text" data-variant="heading5">{{heading}}</p>
-<span class="badge">카드 제목</span>
+<div style="margin-top:var(--space-2)"><span class="badge">카드 제목</span></div>
 <br /><br />
 <h6>body1</h6>
 <p class="text" data-variant="body1">{{body}}</p>
 <br /><br />
 <h6>body2</h6>
 <p class="text" data-variant="body2">{{body}}</p>
+<br /><br />
 <h6>caption</h6>
-<p class="text" data-variant="caption" data-color="danger">필수</p>
-<p class="text" data-variant="caption" data-color="primary">선택</p>
+<div class="group">
+  <p class="text" data-variant="caption" data-color="danger">필수</p>
+  <p class="text" data-variant="caption" data-color="primary">선택</p>
+</div>

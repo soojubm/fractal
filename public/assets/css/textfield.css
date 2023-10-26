@@ -134,7 +134,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .textfield-input:focus {
   /* box-shadow: var(--status-hover); */
-  outline: 3px solid var(--color-point);
+  outline: 2px solid var(--color-point);
 }
 .textfield-input:read-only {
   color: var(--color-text-light);

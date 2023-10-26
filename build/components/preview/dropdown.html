@@ -25,18 +25,26 @@
     <title>Default | Preview Layout</title>
   </head>
   <body>
-    <div style="padding:2rem"><button>trigger</button>
-<div class="tile" data-variant="elevated" style="max-width:180px;padding:var(--space-1) var(--space-4);">
-  <a class="menuitem" role="menuitem">
-    <i>👽</i>
-    Edit
-  </a>
-  <a class="menuitem" role="menuitem">
-    Edit
-  </a>
-  <a class="item" role="menuitem">
-    Delete
-  </a>
+    <div style="padding:2rem"><div class="dropdown" style="position:relative;">
+  <button class="button" data-variant="" data-size="small" data-status="">
+    메뉴
+    <i class="button-suffix" style="margin-top:-2px;transform:rotate(180deg);">
+      <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path></svg>
+    </i>
+  </button>
+  <div class="tile" data-variant="elevated" style="width:180px;padding:var(--space-1) var(--space-4);position:absolute;left:0;top:calc(var(--size-10) + var(--space-1));">
+    <a class="menuitem" role="menuitem">
+      <i>👽</i>
+      Edit
+    </a>
+    <a class="menuitem" role="menuitem">
+      Edit
+    </a>
+    <a class="menuitem" role="menuitem">
+      Delete
+      <i class="menuitem-suffix">icon</i>
+    </a>
+  </div>
 </div></div>
   </body>
 </html>
