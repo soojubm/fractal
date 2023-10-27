@@ -113,6 +113,17 @@ input[type="search"]::-webkit-search-results-decoration {
   --textfield-radius: var(--radius);
   --textfield-text-color: 0;
 }
+.textfield[data-align="horizontal"] {
+  display: flex;
+  align-items: center;
+}
+.textfield[data-align="horizontal"] .textfield-label {
+  margin-bottom: 0;
+  flex: 0.3;
+}
+.textfield[data-align="horizontal"] .textfield-input {
+  flex: 0.7;
+}
 .textfield-label {
   display: flex;
   align-items: center;
