@@ -25,10 +25,6 @@ img {
   width: 24px;
   height: 24px;
 }
-[data-size="a3"] {
-  width: 32px;
-  height: 32px;
-}
 [data-size="medium"] {
   width: var(--size-10);
   height: var(--size-10);

@@ -1,0 +1,18 @@
+<form class="file" method="" enctype="multipart/form-data">
+  <b class="text file-title">첨부파일</b>
+  <p class="text file-description">파일당 최대 50MB, 총 10건까지 등록 가능합니다. Description 영역</p>
+  <div class="file-upload">
+    <button class="button" data-variant="primary">파일 선택</button>
+    <input class="file-input visually-hidden" type="file" id="file2" />
+    <label class="file-label visually-hidden" for="file2"></label>
+  </div>
+
+  <section class="file-attachment">
+    {{! <b class="file-attachment-title">첨부한 파일</b> }}
+    <div class="file-attachment-item">
+      <span>첨부파일_01.jpg</span>
+      <i>icon</i>
+    </div>
+    <p class="file-attachment-helper" role="status">용량을 초과하였습니다.</p>
+  </section>
+</form>

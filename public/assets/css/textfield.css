@@ -104,7 +104,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .textfield {
-  max-width: 400px;
   position: relative;
 
   --textfield-height: var(--size-12);
@@ -171,28 +170,34 @@ input[type="search"]::-webkit-search-results-decoration {
 .textfield-unit {
 }
 
-.textfield-suffix,
-::slotted([slot="icon"]) {
+.textfield-suffix {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--size-large);
+  width: var(--size-12);
   height: var(--textfield-height);
   /* color:var(--color-primary); */
   position: absolute;
-  top: var(--size-small);
+  top: calc(20px + 10px);
   right: 0;
   font-size: 16px !important;
 }
 
-// .textfield-prefix / iconLabel
-::slotted([slot="leading"]) {
+.textfield-prefix {
   display: flex;
   align-items: center;
   height: var(--textfield-height);
   position: absolute;
   top: var(--size-small);
   left: var(--space-4);
+}
+
+.textfield-suffix ~ .textfield-input {
+  padding-right: 3rem;
+}
+
+.textfield-prefix ~ .textfield-input {
+  padding-left: 3rem;
 }
 
 // .textfield-link {}
@@ -203,59 +208,18 @@ input[type="search"]::-webkit-search-results-decoration {
   top: 0;
 }
 
-/* // 검색필드는 레이블이 없다. label ~로 하면 되긴 함. */
-.searchfield {
-  position: relative;
-}
-.searchfield-input {
-  width: 100%;
-  height: var(--size-large);
-  padding: var(--space-2) var(--size-large);
-  border: 0;
-  border-radius: var(--radius);
-  background: var(--color-background-weak);
-  overflow: hidden;
+.
 
-  transition: all 0.2s ease;
-  position: relative;
-  z-index: 1;
+// pricefield
+.textfield[data-type="price"] .textfield-input {
+  padding-right: 48px;
 }
-.searchfield-input:focus {
-  width: 90%;
+
+.textfield[data-type="price"] .textfield-input:not(:placeholder) {
+  font-weight: 600;
 }
-.searchfield-input:focus ~ .searchfield-cancel {
-  right: 0;
-}
-.searchfield-prefix {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--size-large);
-  height: var(--size-large);
-  height: 46px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-}
-.searchfield-prefix ~ .searchfield-input {
-  padding-left: calc(var(--size-medium) + var(--space-after-avatar-medium) + 0.5rem);
-}
-.searchfield-clear {
-  width: var(--size-large);
-  height: var(--size-large);
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: none;
-}
-.searchfield-cancel {
-  right: calc(var(--size-medium) + var(--space-after-avatar-medium) + var(--space-3));
-  height: var(--size-large);
-  position: absolute;
-  right: var(--size-large);
-  top: 0;
-  transition: all 0.2s ease;
+.textfield[data-type="price"] .textfield-helper {
+  text-align: right;
 }
 
 /* // android pattern */
@@ -283,6 +247,6 @@ input[type="search"]::-webkit-search-results-decoration {
   top: 0;
 }
 [data-size="small"] .textfield-input {
-  height: var(--size-medium);
+  height: var(--size-8);
   /* padding-left:2.25rem; */
 }
