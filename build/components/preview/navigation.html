@@ -22,11 +22,36 @@
     <link rel="stylesheet" href="../../assets/css/badge.css" />
     <link rel="stylesheet" href="../../assets/css/texts.css" />
 
+    <link rel="stylesheet" href="../../assets/css/empty-state.css" />
+    <link rel="stylesheet" href="../../assets/css/step.css" />
+
     <title>Default | Preview Layout</title>
   </head>
   <body>
-    <div style="padding:2rem"><nav class="navbar">
+    <div style="padding:2rem"><ul>
+  <li>반응형 메뉴 구조</li>
+  <li>서브메뉴 전체 노출 / 각각 노출 구조가 달라짐. </li>
+</ul>
 
+<nav class="navbar js-navbar" role="navigation">
+  <a class="navbar-logo" href="#">BRAND LOGO</a>
+  <div class="navbar-menu">
+    <a href="#"> Patterns </a>
+    <a href="#">
+      Tokens
+      <test-icon name="nav-arrow-down"></test-icon>
+    </a>
+    <a href="signifier.html">Signifier</a>
+  </div>
+  <div class="navbar-user">
+    <div class="textfield" data-size="small">
+      <i class="textfield-prefix">
+        <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="m17 8-5-5-5 5M17 16l-5 5-5-5"></path></svg>
+      </i>
+      <input class="textfield-input" type="search" id="id" placeholder="이름이나 장소로 검색" autocomplete="off" />
+    </div>
+    <button>알림</button>
+  </div>
 </nav></div>
   </body>
 </html>

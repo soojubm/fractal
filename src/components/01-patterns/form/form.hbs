@@ -1,24 +1,55 @@
-<form style="background:bisque;">
-  <header>
-    <h2 class="text" variant="heading4">상품선택 <em>*</em></h2>
-    <p class="text" variant="label2" style="margin-top:var(--space-1);">필수 입력 사항이며, 여러 개를 선택할 수 있습니다.</p>
-  </header>
-  <fieldset class="checkbox-group" style="display:flex;flex-wrap:wrap;margin:var(--space-6) 0 var(--space-8);">
-    <div class="checkbox" style="width:50%;">
-      <input type="checkbox" id="checkbox" />
-      <label for="checkbox">A 상품 선택</label>
-    </div>
-    <div class="checkbox" style="width:50%;">
-      <input type="checkbox" id="checkbox" />
-      <label for="checkbox">A 상품 선택</label>
-    </div>
-    <div class="checkbox" style="width:50%;">
-      <input type="checkbox" id="checkbox" />
-      <label for="checkbox">A 상품 선택</label>
-    </div>
-    <div class="checkbox" style="width:50%;">
-      <input type="checkbox" id="checkbox" />
-      <label for="checkbox">A 상품 선택</label>
-    </div>
-  </fieldset>
+<form>
+  <div>
+    <header>
+      <h2 class="text" variant="heading4">상품선택 <em>*</em></h2>
+      <p class="text" variant="label2" style="margin-top:var(--space-1);">필수 입력 사항이며, 여러 개를 선택할 수 있습니다.</p>
+    </header>
+    <fieldset class="checkbox-group" style="display:flex;flex-wrap:wrap;margin:var(--space-6) 0 var(--space-8);">
+      <div class="checkbox" style="width:50%;">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">A 상품 선택</label>
+      </div>
+      <div class="checkbox" style="width:50%;">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">A 상품 선택</label>
+      </div>
+      <div class="checkbox" style="width:50%;">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">A 상품 선택</label>
+      </div>
+      <div class="checkbox" style="width:50%;">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">A 상품 선택</label>
+      </div>
+    </fieldset>
+  </div>
+
+  <br /><br />
+  <div>
+    <header>
+      <h2 class="text" variant="heading4">이용약관동의 <em>*</em></h2>
+    </header>
+    <fieldset class="checkbox-group" style="display:flex;flex-direction:column;margin:var(--space-2) 0 var(--space-8);">
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox21" />
+        <label for="checkbox21"><b>모두 동의합니다.</b></label>
+      </div>
+      <hr />
+      <div class="checkbox" data-variant="plain">
+        <input type="checkbox" id="checkbox22" />
+        <label for="checkbox22">(필수)마케팅 수신, 개인정보 제공 동의</label>
+        <a class="checkbox-link" href="">링크</a>
+      </div>
+      <div class="checkbox" data-variant="plain">
+        <input type="checkbox" id="checkbox23" />
+        <label for="checkbox23">(선택)마케팅 수신, 개인정보 제공 동의</label>
+        <a class="checkbox-link" href="">링크</a>
+      </div>
+      <div class="checkbox" data-variant="plain">
+        <input type="checkbox" id="checkbox24" />
+        <label for="checkbox24">(선택)마케팅 수신, 개인정보 제공 동의</label>
+        <a class="checkbox-link" href="">링크</a>
+      </div>
+    </fieldset>
+  </div>
 </form>

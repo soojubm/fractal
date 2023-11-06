@@ -69,11 +69,12 @@ input[type="checkbox"] ~ label:after {
 
 input[type="checkbox"]:checked ~ label:before {
   border-color: var(--color-primary);
+  background-color: var(--color-primary);
   animation: ripple2 0.2s linear forwards;
 }
 input[type="checkbox"]:checked ~ label:after {
   display: block;
-  border-color: var(--color-primary);
+  border-color: #fff;
 }
 input[type="checkbox"]:disabled ~ label {
   opacity: 0.5;
@@ -121,4 +122,25 @@ input[type="checkbox"]:checked + label + * {
   height: 3px;
   left: 7px;
   top: 9px;
+}
+
+.checkbox[data-variant="plain"] {
+  margin-left: -2px;
+}
+
+.checkbox[data-variant="plain"] input[type="checkbox"] ~ label:before {
+  border: none;
+  background-color: transparent;
+}
+.checkbox[data-variant="plain"] input[type="checkbox"] ~ label:after {
+  display: block;
+  border-color: #ccc;
+  width: 10px;
+  height: 4px;
+  top: 6px;
+}
+.checkbox[data-variant="plain"] input[type="checkbox"]:checked ~ label:before {
+}
+.checkbox[data-variant="plain"] input[type="checkbox"]:checked ~ label:after {
+  border-color: var(--color-primary);
 }
