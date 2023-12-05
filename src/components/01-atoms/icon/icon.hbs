@@ -1,18 +1,38 @@
-<figure class="icon" style="background: crimson;">
-  icon sample
-</figure>
+<ul>
+  <li>48 large, 40 medium, 32 small, 20px tiny? </li>
+  <li>20px은 component 페이지에 정의되어 있지 않지만 리액션 버튼에서 사용 중.</li>
+  <li>icon과 icon button의 구분</li>
+</ul>
 <br />
-<div style="display:flex;align-items:center;gap:var(--space-4);">
+
+<div class="group" style="gap:var(--space-4)">
+  <button class="icon-button" data-variant="text" data-size="large">
+    <figure></figure>
+  </button>
+  <button class="icon-button" data-variant="filled" data-size="medium">
+    <figure></figure>
+  </button>
+  <button class="icon-button" data-variant="lined" data-size="small">
+    <figure></figure>
+  </button>
+  <button class="icon-button" data-variant="subtle" data-size="tiny">
+    <figure></figure>
+  </button>
+</div>
+
+<br />
+
+<div class="group" style="gap:var(--space-4);">
   <button class="count-button">
-    <figure class="icon" data-size="small" style="background:crimson"></figure>
+    <figure class="icon" data-size="tiny" style="background:crimson"></figure>
     <span class="text" data-variant="label3" style="line-height:20px;">10</span>
   </button>
   <button class="count-button">
-    <figure class="icon" data-size="small" style="background:crimson"></figure>
+    <figure class="icon" data-size="tiny" style="background:crimson"></figure>
     <span class="text" data-variant="label3" style="line-height:20px;">10</span>
   </button>
   <button class="count-button">
-    <figure class="icon" data-size="small" style="background:crimson"></figure>
+    <figure class="icon" data-size="tiny" style="background:crimson"></figure>
     <span class="text" data-variant="label3" style="line-height:20px;">10</span>
   </button>
 </div>

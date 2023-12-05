@@ -1,16 +1,25 @@
-<div style="display:flex;flex-direction:column;gap:1rem;">
+<div style="display:flex;flex-direction:column;gap:1rem;max-width:400px;">
   <p>
     textfield : hiddenLabel / size / status / prefix / suffix. 나머지는 일단 다른 컴포넌트로.
   </p>
+  <p>memo: 최상위 엘리먼트에서 토큰을 변경하여 자식 엘리먼트를 스타일링 한다. 그렇게 되면 스타일 오버라이딩 코드가 줄어듬.</p>
 
   <div class="textfield">
-    {{! <label class="textfield-label" for="id">이메일 주소</label> }}
     <input class="textfield-input" type="text" id="textfield1" placeholder="hidden label" />
   </div>
 
   <div class="textfield">
-    {{! <label class="textfield-label" for="id">이메일 주소</label> }}
     <input class="textfield-input" type="text" id="textfield1" placeholder="focused" style="outline:2px solid var(--color-point);" />
+  </div>
+
+  <div class="textfield">
+    <input class="textfield-input" type="text" id="textfield1" placeholder="readonly" readonly />
+  </div>
+
+  <div class="textfield is-disabled">
+    <label class="textfield-label" for="id">레이블</label>
+    <input class="textfield-input" type="text" id="textfield1" placeholder="readonly" disabled />
+    <p class="textfield-helper">helper text</p>
   </div>
 
   <div class="textfield" data-align="horizontal">
@@ -30,6 +39,12 @@
   </div>
 
   <div class="textfield">
+    <label class="textfield-label" for="id">비밀번호</label>
+    <input class="textfield-input" type="password" id="id" placeholder="숫자, 특수문자 포함 8자 이상" />
+    <p class="textfield-helper">helper text</p>
+  </div>
+
+  <div class="textfield is-error">
     <label class="textfield-label" for="id">비밀번호</label>
     <input class="textfield-input" type="password" id="id" placeholder="숫자, 특수문자 포함 8자 이상" />
     <p class="textfield-helper">helper text</p>

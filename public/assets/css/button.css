@@ -28,9 +28,6 @@
   font-weight: var(--button-font-weight);
   text-transform: capitalize;
 }
-.button:hover {
-  outline: 2px solid #ddd;
-}
 .button-suffix {
   margin-right: -0.25rem;
 }
@@ -61,6 +58,7 @@
   border: 1px solid var(--red800);
   color: var(--gray0);
 }
+
 // size
 .button[data-size="large"] {
   height: 64px;
@@ -69,18 +67,18 @@
 .button[data-size="small"] {
   height: 32px;
 }
+.button[data-size="tiny"] {
+  height: 24px;
+  padding: 0 10px;
+  font-size: 12px;
+}
 .button[data-isfullwidth] {
   width: 100%;
 }
 
-.button:hover,
-.button[data-status="hover"] {
-  box-shadow: var(--status-hover);
-}
 .button:focus,
 .button[data-status="focus"] {
-  outline: 0;
-  box-shadow: var(--state-focus);
+  outline: 3px solid var(--color-point);
 }
 .button:disabled,
 .button[data-status="disabled"] {
@@ -91,4 +89,144 @@
   display: flex;
   align-items: center;
   gap: var(--space-2);
+}
+
+.icon-button {
+  height: fit-content;
+}
+.icon-button:focus {
+  outline: 3px solid var(--color-point);
+}
+/* ring */
+.icon-button[data-variant="lined"],
+.button[data-variant="lined"] {
+  border: var(--border);
+  background-color: none;
+  color: var(--color-content-primary);
+}
+
+.icon-button[data-variant="lined"],
+.button[data-variant="lined"]:hover {
+  background-color: rgba(36, 38, 40, 0.05);
+}
+
+.icon-button[data-variant="filled"],
+.button[data-variant="filled"] {
+  --button-border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.icon-button[data-variant="filled"],
+.button[data-variant="filled"]:hover {
+  --button-border: 1px solid #5050dc;
+  background: #5050dc;
+}
+
+.icon-button[data-variant="subtle"],
+.button[data-variant="subtle"] {
+  --button-border: 1px solid rgba(242, 242, 245, 1);
+  background: rgba(242, 242, 245, 1);
+  color: var(--color-content-primary);
+}
+.icon-button[data-variant="subtle"],
+.button[data-variant="subtle"]:hover {
+  background-color: rgba(36, 38, 40, 0.05);
+}
+
+.icon-button[data-variant="text"],
+.button[data-variant="text"] {
+  --button-border: 1px solid transparent;
+  background: transparent;
+  color: var(--color-content-primary);
+}
+.icon-button[data-variant="text"],
+.button[data-variant="text"]:hover {
+  background: var(--color-semantic-hovered);
+}
+
+.icon-button[data-size="large"] {
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--size-medium);
+  height: var(--size-8);
+  gap: var(--space-2);
+  padding: 0 var(--space-4) 1px;
+  border: var(--border);
+  border-radius: 50px;
+  background: var(--chip-color-background);
+  color: var(--chip-color-text);
+  position: relative;
+
+  /* TODO donesnt using ? for chip in textfield  */
+  outline: 2px solid var(--color-background);
+  --chip-size: var(--size-small);
+  --chip-height: 0;
+  --chip-inset: null;
+  --chip-radius: 0;
+}
+.chip:hover {
+  background: rgba(80, 80, 220, 0.1);
+}
+
+/* .chip:active {
+  background: rgba(36, 38, 40, 0.1);
+  border-color: rgba(40, 43, 45, 1);
+} */
+
+.chip:focus {
+  outline: 3px solid var(--color-point);
+}
+.chip:disabled {
+  border-color: var(--color-border-disabled);
+  background-color: var(--color-background-disabled);
+  color: rgba(199, 202, 206, 1);
+  cursor: not-allowed;
+}
+
+.icon,
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+.icon:before,
+.icon-button:before {
+  content: "";
+  display: block;
+  background: var(--color-semantic-hovered);
+  position: absolute;
+  left: -0.25rem;
+  right: -0.25rem;
+  top: -0.25rem;
+  bottom: -0.25rem;
+}
+
+.icon[data-size="large"],
+.icon-button[data-size="large"] {
+  width: 48px;
+  height: 48px;
+}
+.icon[data-size="medium"],
+.icon-button[data-size="medium"] {
+  width: 40px;
+  height: 40px;
+}
+.icon[data-size="small"],
+.icon-button[data-size="small"] {
+  width: 32px;
+  height: 32px;
+}
+.icon[data-size="tiny"],
+.icon-button[data-size="tiny"] {
+  width: 20px;
+  height: 20px;
 }

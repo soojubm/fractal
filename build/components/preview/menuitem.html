@@ -28,9 +28,8 @@
     <title>Default | Preview Layout</title>
   </head>
   <body>
-    <div style="padding:2rem"><div style="display:flex;flex-direction:column;gap:.5rem;">
+    <div style="padding:2rem"><div style="display:flex;flex-direction:column;max-width:400px;gap:.5rem;">
   <a role="menuitem" class="item" href="#">
-    <slot class="item-check" name="check"></slot>
     <div class="avatar" data-size="a2">
       <img class="avatar-image" src="../../assets/avatar.png" alt="avatar " />
     </div>
@@ -39,26 +38,11 @@
   </a>
 
   <a role="menuitem" class="item" href="#">
-    <div>
-      <div class="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <label for="checkbox"></label>
-      </div>
-      <div class="checkbox">
-        <input type="checkbox" id="checkbox2" />
-        <label for="checkbox2">개인정보 수집이용 동의</label>
-        <a class="checkbox-link link" href="#">전문보기</a>
-      </div>
-    </div>    <div class="avatar" data-size="a2">
+    <div class="avatar" data-size="a2">
       <img class="avatar-image" src="../../assets/avatar.png" alt="avatar " />
     </div>
     <span class="item-label">메뉴아이템</span>
     <button class="item-action button" data-variant="tertiary" data-size="small">팔로우</button>
-  </a>
-
-  <a role="menuitem" class="item" href="#">
-    <slot class="item-check" name="check"></slot>
-    <span class="item-label">메뉴아이템</span>
   </a>
 
 </div></div>

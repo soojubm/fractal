@@ -71,5 +71,30 @@
 }
 
 .text[data-color="danger"] {
-  color: var(--color-danger);
+  color: var(--color-negative-accent);
+}
+.text[data-color="negative"] {
+  color: var(--color-negative-accent);
+}
+
+.meter {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.meter-track {
+  height: 0.25rem;
+  background-color: var(--color-background-weak);
+  overflow: hidden;
+  flex: auto;
+}
+.meter-thumb {
+  display: block;
+  width: 90%;
+  height: inherit;
+  background: var(--color-primary);
+}
+.meter-text {
+  display: block;
+  font-size: 12px;
 }

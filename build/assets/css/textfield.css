@@ -107,10 +107,13 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
 
   --textfield-height: var(--size-12);
-  --textfield-background-color: #fff;
-  --textfield-border: var(--border);
   --textfield-radius: var(--radius);
   --textfield-text-color: 0;
+
+  --textfield-background-color: #fff;
+  --textfield-border-color: var(--color-border);
+  --textfield-helper-color: var(--color-content-tertiary);
+  --textfield-label-color: var(--color-content-priamry);
 }
 .textfield[data-align="horizontal"] {
   display: flex;
@@ -131,13 +134,15 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0 0 var(--space-2);
   line-height: var(--size-small);
   font-weight: var(--font-weight-bold);
+  color: var(--textfield-label-color);
 }
+.textfield input,
 .textfield-input {
   display: block;
   width: 100%;
   height: var(--textfield-height);
   padding: var(--space-2) var(--space-4);
-  border: var(--border);
+  border: 1px solid var(--textfield-border-color);
   border-radius: var(--radius);
   background: var(--textfield-background-color);
   color: var(--color-text);
@@ -156,7 +161,12 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .textfield-helper {
   margin: var(--space-1) 0 0;
-  color: var(--red800);
+  color: var(--textfield-helper-color);
+}
+
+.textfield.is-error {
+  --textfield-border-color: var(--color-negative-accent);
+  --textfield-helper-color: var(--color-negative-accent);
 }
 
 /* .inputfield[data-type=search] {} */
@@ -208,7 +218,20 @@ input[type="search"]::-webkit-search-results-decoration {
   top: 0;
 }
 
-.
+.textfield-input:read-only {
+  background-color: #f8f8f8;
+  border-color: #e5e6e8;
+}
+.textfield-input:read-only:focus {
+  outline: 0;
+}
+
+.textfield.is-disabled {
+  --textfield-border-color: var(--color-border-disabled);
+  --textfield-background-color: var(--color-semantic-disabled);
+  --textfield-label-color: var(--color-content-disabled);
+  --textfield-helper-color: var(--color-border-disabled);
+}
 
 // pricefield
 .textfield[data-type="price"] .textfield-input {
@@ -249,4 +272,49 @@ input[type="search"]::-webkit-search-results-decoration {
 [data-size="small"] .textfield-input {
   height: var(--size-8);
   /* padding-left:2.25rem; */
+}
+
+/* date picker */
+.ui-datepicker {
+  padding: var(--space-4) !important;
+}
+.ui-datepicker .ui-datepicker-header {
+  border: 0;
+  padding: 0;
+  background: #fff;
+}
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  left: auto !important;
+  right: 32px;
+}
+.ui-datepicker .ui-datepicker-next {
+}
+.ui-datepicker table tbody tr {
+  border: none;
+}
+.ui-datepicker table tbody td {
+  text-align: center;
+}
+.ui-datepicker table tbody td a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+}
+.ui-state-default {
+  border: none !important;
+  background: none !important;
+}
+.ui-state-highlight {
+  background: var(--color-primary) !important;
+  color: #fff !important;
 }

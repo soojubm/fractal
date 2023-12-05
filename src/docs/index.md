@@ -17,6 +17,17 @@ title: 링 시스템
 --color-blue: null;
 --color-primary: null;
 
+<!-- // colors -->
+--color-warning-subtle: rgba(255, 251, 224, 1);
+--color-warning-accent: #944500;
+--color-negative-subtle: rgba(255, 241, 241, 1);
+--color-negative-accent: rgba(199, 14, 14, 1);
+--color-positive-subtle: rgba(238, 255, 241, 1);
+--color-positive-accent: rgba(0, 122, 32, 1);
+
+
+
+
 
 --size-5: 1.25rem; // radio, checkbox
 --size-6: 1.5rem; // badge
