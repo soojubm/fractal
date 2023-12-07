@@ -80,6 +80,10 @@
   --color-border-disabled: rgba(224, 225, 227, 1);
 
   --color-background-disabled: rgba(248, 248, 248, 1);
+
+  --color-semantic-primary: #5050dc;
+  --color-semantic-primary-subtle: #e6eafd;
+
   --color-semantic-disabled: rgba(250, 250, 250, 1);
   --color-semantic-overay: rgba(36, 38, 40, 0.05);
   --color-semantic-hovered: rgba(80, 80, 220, 0.05);

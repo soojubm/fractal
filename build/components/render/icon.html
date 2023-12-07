@@ -4,25 +4,56 @@
   <li>48 large, 40 medium, 32 small, 20px tiny? </li>
   <li>20px은 component 페이지에 정의되어 있지 않지만 리액션 버튼에서 사용 중.</li>
   <li>icon과 icon button의 구분</li>
+  <li>사이즈는 전체적으로 textfield / button / icon button 정도는 동일해야 함.</li>
+  <li>TODO variant와 상태의 통합. (button, icon button, chip)</li>
 </ul>
+
 <br />
 
 <div class="group" style="gap:var(--space-4)">
-  <button class="icon-button" data-variant="text" data-size="large">
+  <button class="icon-button" data-variant="text"></button>
+  <button class="icon-button" data-variant="text" disabled></button>
+</div>
+
+<br />
+
+<div class="group" style="gap:var(--space-4)">
+  <button class="icon-button" data-variant="filled"></button>
+  <button class="icon-button" data-variant="filled" disabled></button>
+</div>
+
+<br />
+
+<div class="group" style="gap:var(--space-4)">
+  <button class="icon-button" data-variant="lined"></button>
+  <button class="icon-button" data-variant="lined" disabled></button>
+</div>
+
+<br />
+
+<div class="group" style="gap:var(--space-4)">
+  <button class="icon-button" data-variant="subtle"></button>
+  <button class="icon-button" data-variant="subtle" disabled></button>
+</div>
+
+<br /><hr /><br />
+
+<div class="group" style="gap:var(--space-4)">
+  <button class="icon-button" data-variant="filled" data-size="large">
     <figure></figure>
   </button>
   <button class="icon-button" data-variant="filled" data-size="medium">
     <figure></figure>
   </button>
-  <button class="icon-button" data-variant="lined" data-size="small">
+  <button class="icon-button" data-variant="filled" data-size="small">
     <figure></figure>
   </button>
-  <button class="icon-button" data-variant="subtle" data-size="tiny">
+  <button class="icon-button" data-variant="filled" data-size="tiny">
     <figure></figure>
   </button>
 </div>
 
-<br />
+<br /><hr /><br />
 
 <div class="group" style="gap:var(--space-4);">
   <button class="count-button">

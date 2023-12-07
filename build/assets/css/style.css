@@ -145,6 +145,14 @@
   line-height: 32px;
   position: relative;
 }
+.menuitem.is-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.menuitem.is-disabled.hover:before {
+  /* TODO */
+  background: none;
+}
 /* TODO tile inset에 의존 */
 .menuitem:hover:before {
   content: "";
@@ -511,7 +519,7 @@ input[type="file"] + label:after {
 hr {
   width: 100%;
   height: 1px;
-  background: red;
+  background: var(--color-border-primary);
 }
 
 /* // grid filter */

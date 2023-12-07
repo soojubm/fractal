@@ -155,56 +155,74 @@ q:before {
   line-height: 48px;
 }
 
-table {
+/* table */
+
+.table {
   width: 100%;
   border-collapse: collapse;
-  border-spacing: 0;
-  border-left-style: hidden;
-  border-right-style: hidden;
-  --table-lineheight: 1.6;
+  --table-lineheight: 140%;
+  /* TODO variables */
+  border-radius: var(--radius-radius-sm, 4px);
+  font-size: inherit;
+
+  /* border-spacing: 0;
+  border-collapse: separate;
+  border: var(--border);
+  overflow: hidden; */
+
+  /* border-left-style: hidden;
+  border-right-style: hidden; */
 }
-table caption {
-  padding: 0.5rem 0;
+.table caption {
+  padding: var(--space-2) 0;
   font-size: var(--font-size-small);
   text-align: left;
 }
-table thead {
+.table thead {
+  border: var(--border);
 }
-table thead tr {
+.table thead tr {
 }
-table thead tr th {
-  padding: var(--space-2) 0;
+.table thead tr th {
+  padding: 10px 12px;
+  background-color: #f2f2f5;
   line-height: var(--table-lineheight);
-  color: var(--color-text-light);
+  font-weight: bold;
   text-align: left;
 }
-table tbody {
+.table tbody {
 }
-table tbody tr {
+.table tbody tr {
   border: var(--border);
   line-height: var(--table-lineheight);
   position: relative;
 }
-table tbody tr th {
+.table tbody tr th {
   width: 6rem;
-  padding: var(--space-3) 0;
+  padding: 10px 12px;
   text-align: left;
   color: var(--color-text-light);
   vertical-align: baseline;
 }
-table tbody tr td {
-  padding: var(--space-3) 0;
+.table tbody tr td {
+  padding: 10px var(--space-3);
+  color: var(--color-content-secondary);
 }
-table tbody tr:hover {
+.table tbody tr:hover {
 }
-table .right {
+.table .right {
   text-align: right;
 }
-table tbody[role="rowgroup"] tr th {
+.table tbody[role="rowgroup"] tr th {
   width: 25%;
 }
-table tbody[role="rowgroup"] tr th + th {
+.table tbody[role="rowgroup"] tr th + th {
   width: auto;
+}
+
+/* TODO  */
+.table .checkbox {
+  padding: 0 !important;
 }
 
 ul {

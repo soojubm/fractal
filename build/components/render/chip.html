@@ -1,16 +1,42 @@
 
 
+<ul>
+  <li>TODO :: chip 내부 아이콘의 크기 규칙</li>
+</ul>
+
+<br />
+
 <div class="group" role="group">
-  <button class="chip">칩</button>
-  <button class="chip">
-    <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M6 20h12M12 4v12m0 0 3.5-3.5M12 16l-3.5-3.5"></path></svg>
-    칩
-    </button>
-  <button class="chip">
-    칩
-    <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M6 20h12M12 4v12m0 0 3.5-3.5M12 16l-3.5-3.5"></path></svg>
+  <button class="chip" data-variant="lined">Lined</button>
+    <button class="chip" data-status="selected">
+    Lined selected
   </button>
-    <button class="chip" disabled>
-    칩
+  <button class="chip" data-variant="lined" disabled>Lined disabled</button>
+</div>
+
+<br />
+
+<div class="group">
+  <button class="chip" data-variant="subtle">Subtle</button>
+  <button class="chip" data-variant="subtle" disabled>Subtle disabled</button>
+</div>
+
+<br />
+
+<div class="group">
+  <button class="chip" data-variant="color">Color</button>
+  <button class="chip" data-variant="color" disabled>Color disabled</button>
+</div>
+
+<br />
+
+<div class="group">
+  <button class="chip" data-status="selected">
+    <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M6 20h12M12 4v12m0 0 3.5-3.5M12 16l-3.5-3.5"></path></svg>
+    heading
+  </button>
+    <button class="chip" data-status="selected">
+    trailing
+    <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M6 20h12M12 4v12m0 0 3.5-3.5M12 16l-3.5-3.5"></path></svg>
   </button>
 </div>

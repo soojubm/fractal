@@ -1,5 +1,23 @@
-<div class="group" style="display:flex;flex-wrap:wrap;gap:var(--space-4)">
-  {{!-- <div class="avatar" data-size="a1">
+<h3 style="margin-bottom:.5rem;">component tokens</h3>
+<ul>
+  <li>--avatar-badge-size</li>
+  <li>--avatar-badge-boder-width</li>
+  <li>--avatar-badge-position</li>
+  <li>--avatar-size</li>
+</ul>
+
+<br /><br />
+
+<div class="group" style="gap:var(--space-4)">
+  <div class="avatar" data-size="a5">
+    <img class="avatar-image" src="{{path '/assets/avatar.png'}}" alt="avatar {{size}}" />
+    <span class="avatar-badge"></span>
+  </div>
+  <div class="avatar" data-size="medium">
+    <img class="avatar-image" src="{{path '/assets/avatar.png'}}" alt="avatar {{size}}" />
+    <span class="avatar-badge"></span>
+  </div>
+  <div class="avatar" data-size="a3">
     <img class="avatar-image" src="{{path '/assets/avatar.png'}}" alt="avatar {{size}}" />
     <span class="avatar-badge"></span>
   </div>
@@ -7,16 +25,8 @@
     <img class="avatar-image" src="{{path '/assets/avatar.png'}}" alt="avatar {{size}}" />
     <span class="avatar-badge"></span>
   </div>
-  <div class="avatar" data-size="a3">
-    <img class="avatar-image" src="{{path '/assets/avatar.png'}}" alt="avatar {{size}}" />
-    <span class="avatar-badge"></span>
-  </div> --}}
-  <div class="avatar" data-size="medium">
+  <div class="avatar" data-size="a1">
     <img class="avatar-image" src="{{path '/assets/avatar.png'}}" alt="avatar {{size}}" />
     <span class="avatar-badge"></span>
   </div>
-  {{!-- <div class="avatar" data-size="a5">
-    <img class="avatar-image" src="{{path '/assets/avatar.png'}}" alt="avatar {{size}}" />
-    <span class="avatar-badge"></span>
-  </div> --}}
 </div>

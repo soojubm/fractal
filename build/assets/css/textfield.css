@@ -1,7 +1,3 @@
-p {
-  margin: 0;
-}
-
 /* form:invalid button {}
 fieldset:invalid ~ fieldset { display: none; }
 input:valid {}
@@ -106,7 +102,10 @@ input[type="search"]::-webkit-search-results-decoration {
 .textfield {
   position: relative;
 
-  --textfield-height: var(--size-12);
+  --textfield-size: 48px;
+  --textfield-label-font-size: 14px;
+  --textfield-label-margin-bottom: var(--space-2);
+
   --textfield-radius: var(--radius);
   --textfield-text-color: 0;
 
@@ -131,16 +130,18 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   /* TODO 6px */
   gap: 6px;
-  margin: 0 0 var(--space-2);
+  margin-bottom: var(--textfield-label-margin-bottom);
   line-height: var(--size-small);
   font-weight: var(--font-weight-bold);
+
+  font-size: var(--textfield-label-font-size);
   color: var(--textfield-label-color);
 }
 .textfield input,
 .textfield-input {
   display: block;
   width: 100%;
-  height: var(--textfield-height);
+  height: var(--textfield-size);
   padding: var(--space-2) var(--space-4);
   border: 1px solid var(--textfield-border-color);
   border-radius: var(--radius);
@@ -175,10 +176,6 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: var(--font-size-small);
   color: var(--color-text-light);
 }
-.textfield-check {
-}
-.textfield-unit {
-}
 
 .textfield-suffix {
   display: flex;
@@ -208,14 +205,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .textfield-prefix ~ .textfield-input {
   padding-left: 3rem;
-}
-
-// .textfield-link {}
-::slotted([slot="link"]) {
-  font-size: var(--font-size-small);
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .textfield-input:read-only {
@@ -265,6 +254,24 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /* sizes */
+.textfield[data-size="small"] {
+  --textfield-size: 32px;
+  --textfield-label-font-size: 12px;
+  --textfield-label-margin-bottom: var(--space-2);
+}
+.textfield[data-size="medium"] {
+  --textfield-size: 40px;
+  --textfield-label-margin-bottom: 10px;
+}
+.textfield[data-size="large"] {
+  --textfield-size: 48px;
+  --textfield-label-margin-bottom: 10px;
+}
+.textfield[data-size="xlarge"] {
+  --textfield-size: 56px;
+  --textfield-label-margin-bottom: var(--space-3);
+}
+
 [data-size="small"] .textfield-prefix {
   left: var(--space-1);
   top: 0;

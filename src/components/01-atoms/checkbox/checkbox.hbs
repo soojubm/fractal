@@ -1,3 +1,25 @@
+<ul>
+  <li>--check-size</li>
+  <li>--checkbox-radius</li>
+  <li>--checkbox-label-font-size</li>
+  <li>MEMO :: check-size VS checkbox-input-size</li>
+</ul>
+
+<br />
+
+<div>
+  <div class="checkbox" data-variant="square">
+    <input type="checkbox" id="checkbox1" />
+    <label for="checkbox1">{{text}}</label>
+  </div>
+  <div class="checkbox" data-variant="square" data-size="large">
+    <input type="checkbox" id="checkbox2" />
+    <label for="checkbox2">{{text}}</label>
+  </div>
+</div>
+
+<br /><hr /><br />
+
 <div>
   <div class="checkbox">
     <input type="checkbox" id="checkbox" />
@@ -5,6 +27,11 @@
   </div>
   <div class="checkbox">
     <input type="checkbox" id="checkbox2" />
+    <label for="checkbox2">개인정보 수집이용 동의</label>
+    <a class="checkbox-link link" href="#">전문보기</a>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" id="checkbox2" disabled />
     <label for="checkbox2">개인정보 수집이용 동의</label>
     <a class="checkbox-link link" href="#">전문보기</a>
   </div>

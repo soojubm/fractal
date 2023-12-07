@@ -155,25 +155,58 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>48 large, 40 medium, 32 small, 20px tiny? <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>20px은 component 페이지에 정의되어 있지 않지만 리액션 버튼에서 사용 중.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>icon과 icon button의 구분<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>사이즈는 전체적으로 textfield / button / icon button 정도는 동일해야 함.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>TODO variant와 상태의 통합. (button, icon button, chip)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
 <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;group&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;gap:var(--space-4)&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;large&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;group&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;gap:var(--space-4)&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;filled&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;filled&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;group&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;gap:var(--space-4)&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;lined&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;lined&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;group&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;gap:var(--space-4)&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;subtle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;subtle&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;group&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;gap:var(--space-4)&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;filled&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;large&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;filled&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;medium&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;lined&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;small&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;filled&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;small&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;subtle&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;tiny&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-button&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;filled&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;tiny&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;group&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;gap:var(--space-4);&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;count-button&quot;</span>&gt;</span>
@@ -923,40 +956,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./login.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="login"
-                data-handle="login"
-            >
-                <span>Login</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./menu.html"
                 data-role="tree-link"
                 
@@ -1025,6 +1024,74 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./pagehead.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="pagehead"
+                data-handle="pagehead"
+            >
+                <span>Pagehead</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./tables.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="tables"
+                data-handle="tables"
+            >
+                <span>Tables</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./temp.html"
                 data-role="tree-link"
                 
@@ -1033,6 +1100,94 @@
                 data-handle="temp"
             >
                 <span>Temp</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-pages-items">
+                    Pages
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-pages-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./contact.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="contact"
+                data-handle="contact"
+            >
+                <span>Contact</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./login.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="login"
+                data-handle="login"
+            >
+                <span>Login</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1467,40 +1622,6 @@
                 data-handle="menuitem"
             >
                 <span>Menuitem</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./pagehed.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="pagehed"
-                data-handle="pagehed"
-            >
-                <span>Pagehed</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2254,6 +2375,12 @@
         
     
         
+    
+        
+    
+        
+    
+        
             
             <div class="Navigation-group" data-role="variant-group" data-component="dialogs">
                 
@@ -2513,8 +2640,6 @@
 </div>
 
             </div>
-        
-    
         
     
         

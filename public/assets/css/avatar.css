@@ -1,35 +1,48 @@
-/* {{! // 96 40 32 24 16 }} */
 .avatar {
   position: relative;
+  --avatar-size: 0;
+  --avatar-badge-size: 8px;
+  --avatar-border-width: 3px;
+  --avatar-position: calc(var(--avatar-border-width) * -0.5);
 }
 .avatar-badge {
-  display: none;
-  width: 8px;
-  height: 8px;
-  border: 4px solid #fff;
+  width: var(--avatar-badge-size);
+  height: var(--avatar-badge-size);
+  border: var(--avatar-border-width) solid #fff;
   border-radius: 50%;
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  right: var(--avatar-position);
+  bottom: var(--avatar-position);
   background: #1ab240;
 }
-img {
-  display: block;
-  width: 100%;
-}
-[data-size="a1"] {
+.avatar[data-size="a1"] {
+  --avatar-badge-size: 4px;
+  --avatar-border-width: 1px;
   width: 16px;
   height: 16px;
 }
-[data-size="a2"] {
+.avatar[data-size="a2"] {
+  --avatar-badge-size: 6px;
+  --avatar-border-width: 2px;
   width: 24px;
   height: 24px;
 }
-[data-size="medium"] {
+.avatar[data-size="a3"] {
+  --avatar-badge-size: 8px;
+  --avatar-border-width: 2px;
+  width: 32px;
+  height: 32px;
+}
+.avatar[data-size="medium"] {
+  --avatar-badge-size: 8px;
+  --avatar-border-width: 2px;
   width: var(--size-10);
   height: var(--size-10);
 }
-[data-size="a5"] {
+.avatar[data-size="a5"] {
+  --avatar-badge-size: 16px;
+  --avatar-border-width: 3px;
+  --avatar-position: 4px;
   width: 96px;
   height: 96px;
 }

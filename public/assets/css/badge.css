@@ -2,7 +2,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: var(--spacing-1, 4px) var(--spacing-025, 10px);
+  height: 28px;
+  padding: 0 var(--spacing-025, 10px);
 
   gap: 10px;
 
@@ -12,7 +13,6 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 130%; /* 15.6px */
 }
 
 .badge[data-variant="positive"] {
@@ -26,4 +26,40 @@
 .badge[data-variant="warning"] {
   background-color: var(--color-warning-subtle);
   color: var(--color-warning-accent);
+}
+
+.badge[data-size="medium"] {
+  height: 32px;
+  padding: 0 16px;
+}
+
+.badge[data-size="small"] {
+  height: 28px;
+  padding: 0 12px;
+}
+
+.badge[data-size="tiny"] {
+  height: 24px;
+  padding: 0 10px;
+}
+
+.badge[data-variant="filled"] {
+  background: var(--color-semantic-primary);
+  color: #fff;
+}
+.badge[data-variant="subtle"] {
+  background: var(--color-semantic-primary-subtle);
+  color: var(--color-semantic-primary);
+}
+.badge[data-variant="lined"] {
+  border: 1px solid var(--color-semantic-primary);
+  background: transparent;
+}
+
+.indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: crimson;
 }

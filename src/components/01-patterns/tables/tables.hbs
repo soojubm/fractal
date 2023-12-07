@@ -1,0 +1,55 @@
+<ul>
+  <li>MEMO: 테이블의 코너를 둥글게 만들기 위해서는 div 하나가 더 필요하다. thead에 배경색이 들어가지 않는다면 table 태그로 해결할 수는 있다.</li>
+  <li>https://unused-css.com/blog/css-rounded-table-corners/</li>
+  <li>상하 간격. 텍스트가 2줄 이상이 될 때. 셀에 다른 컴포넌트가 포함될 수 있을 때.</li>
+  <li>table class 추가. jquery datepicker 등 서드파티 라이브러리와의 스타일 충돌 방지.</li>
+</ul>
+
+<br />
+
+<table class="table">
+  <caption>
+    테이블 캡션
+  </caption>
+  <!-- <colgroup>
+    <col>
+    <col span="2" class="batman">
+    <col span="2" class="flash">
+  </colgroup> -->
+  <thead role="rowgroup">
+    <tr role="row">
+      <th role="columnheader" aria-sort="none" class="table-checkbox">
+        <div class="checkbox">
+          <input type="checkbox" id="temp1" />
+          <label for="temp1"></label>
+        </div>
+      </th>
+      <th scope="col">항목 1</th>
+      <th scope="col">항목 1</th>
+      <th scope="col">숫자 데이터</th>
+      <th scope="col">정형 데이터</th>
+      <th scope="col">비정형 데이터</th>
+      <th scope="col">상태</th>
+      <th scope="col">등록일</th>
+    </tr>
+  </thead>
+  <tbody role="rowgroup">
+    <tr role="row" aria-rowindex="11">
+      <td>
+        <div class="checkbox">
+          <input type="checkbox" id="temp1" />
+          <label for="temp1"></label>
+        </div>
+      </td>
+      <td>
+        1
+      </td>
+      <td><a href="#">2022년 상반기 구매회원-링크</a></td>
+      <td class="right">22.5 %</td>
+      <td>이사</td>
+      <td>㈜스타벅스커피 코리아</td>
+      <td><span class="badge" data-variant="negative">뱃지</span></td>
+      <td>9,600</td>
+    </tr>
+  </tbody>
+</table>

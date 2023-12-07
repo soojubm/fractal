@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.3" type="text/css">
 
 
-<title>Pagehed | Ring System component library</title>
+<title>Tables | Ring System component library</title>
 
 </head>
 <body>
@@ -61,14 +61,14 @@
             <div class="Frame-inner" id="pjax-container">
             
 
-<div class="Pen" data-behaviour="pen" id="pen-4167154a1d88d4aa85eb856a618e8205">
+<div class="Pen" data-behaviour="pen" id="pen-72485d3d25a3827c33937a3b4527fff3">
 
     
 
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
-        <a class="Pen-previewLink" href="../preview/pagehed.html" title="Preview">
-            Pagehed
+        <a class="Pen-previewLink" href="../preview/tables.html" title="Preview">
+            Tables
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -91,13 +91,13 @@
 </div>
 
 
-    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-4167154a1d88d4aa85eb856a618e8205">
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-72485d3d25a3827c33937a3b4527fff3">
     <div class="Preview-wrapper" data-role="resizer">
         <div class="Preview-resizer">
              <iframe
                 class="Preview-iframe"
                 data-role="window"
-                src="../preview/pagehed.html"
+                src="../preview/tables.html"
                  style=""
                 marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
             </iframe>
@@ -111,7 +111,7 @@
     <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
 
     <div class="Pen-panel Pen-info" data-role="info">
-    <div class="Browser" data-behaviour="browser" id="browser-4167154a1d88d4aa85eb856a618e8205">
+    <div class="Browser" data-behaviour="browser" id="browser-72485d3d25a3827c33937a3b4527fff3">
 
     
 
@@ -120,7 +120,7 @@
         
         
         <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
-            <a href="#browser-4167154a1d88d4aa85eb856a618e8205-panel-html">
+            <a href="#browser-72485d3d25a3827c33937a3b4527fff3-panel-html">
                 HTML
             </a>
         </li>
@@ -128,7 +128,7 @@
         
         
         <li class="Browser-tab Browser-tab--info" data-role="tab">
-            <a href="#browser-4167154a1d88d4aa85eb856a618e8205-panel-info">
+            <a href="#browser-72485d3d25a3827c33937a3b4527fff3-panel-info">
                 Info
             </a>
         </li>
@@ -136,7 +136,7 @@
         
         
         <li class="Browser-tab Browser-tab--notes" data-role="tab">
-            <a href="#browser-4167154a1d88d4aa85eb856a618e8205-panel-notes">
+            <a href="#browser-72485d3d25a3827c33937a3b4527fff3-panel-notes">
                 Notes
             </a>
         </li>
@@ -148,23 +148,74 @@
 
     
     
-<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-4167154a1d88d4aa85eb856a618e8205-panel-html">
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-72485d3d25a3827c33937a3b4527fff3-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align: center;&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">variant</span>=<span class="hljs-string">&quot;heading4&quot;</span>&gt;</span>페이지 헤드<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">variant</span>=<span class="hljs-string">&quot;body2&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;margin-top:var(--space-2);&quot;</span>&gt;</span>디스크립션. 로그인. 컨텍 페이지에서 쓰고 있다.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>MEMO: 테이블의 코너를 둥글게 만들기 위해서는 div 하나가 더 필요하다. thead에 배경색이 들어가지 않는다면 table 태그로 해결할 수는 있다.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>https://unused-css.com/blog/css-rounded-table-corners/<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>상하 간격. 텍스트가 2줄 이상이 될 때. 셀에 다른 컴포넌트가 포함될 수 있을 때.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>table class 추가. jquery datepicker 등 서드파티 라이브러리와의 스타일 충돌 방지.<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;table&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">caption</span>&gt;</span>
+        테이블 캡션
+    <span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &lt;colgroup&gt;
+    &lt;col&gt;
+    &lt;col span=&quot;2&quot; class=&quot;batman&quot;&gt;
+    &lt;col span=&quot;2&quot; class=&quot;flash&quot;&gt;
+  &lt;/colgroup&gt; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;rowgroup&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;columnheader&quot;</span> <span class="hljs-attr">aria-sort</span>=<span class="hljs-string">&quot;none&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;table-checkbox&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;temp1&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;temp1&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>항목 1<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>항목 1<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>숫자 데이터<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>정형 데이터<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>비정형 데이터<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>상태<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">&quot;col&quot;</span>&gt;</span>등록일<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;rowgroup&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;row&quot;</span> <span class="hljs-attr">aria-rowindex</span>=<span class="hljs-string">&quot;11&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;checkbox&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;temp1&quot;</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;temp1&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+                1
+            <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>2022년 상반기 구매회원-링크<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>22.5 %<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>이사<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>㈜스타벅스커피 코리아<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;badge&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;negative&quot;</span>&gt;</span>뱃지<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>9,600<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></pre>
         
     </code>
 </div>
 
     
-    <div class="Browser-panel" data-role="tab-panel" id="browser-4167154a1d88d4aa85eb856a618e8205-panel-info">
+    <div class="Browser-panel" data-role="tab-panel" id="browser-72485d3d25a3827c33937a3b4527fff3-panel-info">
     <ul class="Meta">
         <li class="Meta-item">
             <strong class="Meta-key">Handle:</strong>
-            <span class="Meta-value">@pagehed</span>
+            <span class="Meta-value">@tables</span>
         </li>
         
         
@@ -172,12 +223,12 @@
             <strong class="Meta-key">Preview:</strong>
             <span class="Meta-value">
                 <ul>
-                    <li><a data-no-pjax href="../preview/pagehed.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <li><a data-no-pjax href="../preview/tables.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
 </a></li>
-                    <li><a data-no-pjax href="../render/pagehed.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <li><a data-no-pjax href="../render/tables.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
@@ -187,7 +238,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src\components\pagehed\pagehed.hbs</span>
+            <span class="Meta-value">src\components\01-patterns\tables\tables.hbs</span>
         </li>
         
         
@@ -195,7 +246,7 @@
 </div>
 
     
-    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-4167154a1d88d4aa85eb856a618e8205-panel-notes">
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-72485d3d25a3827c33937a3b4527fff3-panel-notes">
     <div class="Prose Prose--condensed">
         
         <p class="Browser-isEmptyNote">No notes defined.</p>
@@ -889,40 +940,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./login.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="login"
-                data-handle="login"
-            >
-                <span>Login</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./menu.html"
                 data-role="tree-link"
                 
@@ -991,6 +1008,74 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./pagehead.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="pagehead"
+                data-handle="pagehead"
+            >
+                <span>Pagehead</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./tables.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="tables"
+                data-handle="tables"
+            >
+                <span>Tables</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./temp.html"
                 data-role="tree-link"
                 
@@ -999,6 +1084,94 @@
                 data-handle="temp"
             >
                 <span>Temp</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-pages-items">
+                    Pages
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-pages-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./contact.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="contact"
+                data-handle="contact"
+            >
+                <span>Contact</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./login.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="login"
+                data-handle="login"
+            >
+                <span>Login</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1433,40 +1606,6 @@
                 data-handle="menuitem"
             >
                 <span>Menuitem</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./pagehed.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="pagehed"
-                data-handle="pagehed"
-            >
-                <span>Pagehed</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2220,6 +2359,12 @@
         
     
         
+    
+        
+    
+        
+    
+        
             
             <div class="Navigation-group" data-role="variant-group" data-component="dialogs">
                 
@@ -2479,8 +2624,6 @@
 </div>
 
             </div>
-        
-    
         
     
         

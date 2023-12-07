@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
+    <link rel="stylesheet" href="../../assets/css/chip.css" />
 
     <link rel="stylesheet" href="../../assets/css/checkbox.css" />
     <link rel="stylesheet" href="../../assets/css/radio.css" />
@@ -28,7 +29,32 @@
     <title>Default | Preview Layout</title>
   </head>
   <body>
-    <div style="padding:2rem"><div class="dropdown" style="position:relative;">
+    <div style="padding:2rem"><ul>
+  <li>TODO :: 메뉴</li>
+</ul>
+
+<br />
+
+<nav>
+  <a class="menuitem" role="menuitem">
+    Defaul
+  </a>
+  <a class="menuitem" role="menuitem">
+    <i>👽</i>
+    with Heading icon
+  </a>
+  <a class="menuitem" role="menuitem">
+    with Trailing icon
+    <i class="menuitem-suffix">icon</i>
+  </a>
+  <a class="menuitem is-disabled" role="menuitem">
+    Disabled
+  </a>
+</nav>
+
+<br /><hr /><br />
+
+<div class="dropdown" style="position:relative;">
   <button class="button" data-variant="" data-size="small" data-status="">
     메뉴
     <i class="button-suffix" style="margin-top:-2px;transform:rotate(180deg);">
@@ -48,6 +74,8 @@
       <i class="menuitem-suffix">icon</i>
     </a>
   </div>
-</div></div>
+</div>
+
+</div>
   </body>
 </html>

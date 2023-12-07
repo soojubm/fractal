@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
+    <link rel="stylesheet" href="../../assets/css/chip.css" />
 
     <link rel="stylesheet" href="../../assets/css/checkbox.css" />
     <link rel="stylesheet" href="../../assets/css/radio.css" />
@@ -28,13 +29,40 @@
     <title>Default | Preview Layout</title>
   </head>
   <body>
-    <div style="padding:2rem"><div>
+    <div style="padding:2rem"><ul>
+  <li>--check-size</li>
+  <li>--checkbox-radius</li>
+  <li>--checkbox-label-font-size</li>
+  <li>MEMO :: check-size VS checkbox-input-size</li>
+</ul>
+
+<br />
+
+<div>
+  <div class="checkbox" data-variant="square">
+    <input type="checkbox" id="checkbox1" />
+    <label for="checkbox1">체크박스</label>
+  </div>
+  <div class="checkbox" data-variant="square" data-size="large">
+    <input type="checkbox" id="checkbox2" />
+    <label for="checkbox2">체크박스</label>
+  </div>
+</div>
+
+<br /><hr /><br />
+
+<div>
   <div class="checkbox">
     <input type="checkbox" id="checkbox" />
     <label for="checkbox">체크박스</label>
   </div>
   <div class="checkbox">
     <input type="checkbox" id="checkbox2" />
+    <label for="checkbox2">개인정보 수집이용 동의</label>
+    <a class="checkbox-link link" href="#">전문보기</a>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" id="checkbox2" disabled />
     <label for="checkbox2">개인정보 수집이용 동의</label>
     <a class="checkbox-link link" href="#">전문보기</a>
   </div>

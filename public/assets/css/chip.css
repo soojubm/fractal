@@ -1,0 +1,64 @@
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--size-medium);
+  height: var(--size-8);
+  gap: var(--space-2);
+  padding: 0 var(--space-4) 1px;
+  border: var(--border);
+  border-radius: 50px;
+  background: var(--chip-color-background);
+  color: var(--chip-color-text);
+  position: relative;
+
+  /* TODO donesnt using ? for chip in textfield  */
+  outline: 2px solid var(--color-background);
+  --chip-size: var(--size-small);
+  --chip-height: 0;
+  --chip-inset: null;
+  --chip-radius: 0;
+}
+.chip:focus {
+  outline: 3px solid var(--color-point);
+}
+
+.chip[data-variant="lined"]:hover {
+  background: rgba(36, 38, 40, 0.05);
+}
+.chip[data-variant="lined"]:disabled {
+  border-color: var(--color-border-disabled);
+  background-color: transparent;
+  color: rgba(199, 202, 206, 1);
+  cursor: not-allowed;
+}
+
+.chip[data-variant="subtle"] {
+  border: none;
+  background: var(--color-semantic-primary-subtle);
+}
+.chip[data-variant="subtle"]:hover:not(:disabled) {
+  background: var(--color-semantic-overlay-hovered, rgba(36, 38, 40, 0.05));
+}
+.chip[data-variant="subtle"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.chip[data-variant="color"] {
+  border-color: var(--color-semantic-primary);
+  color: var(--color-semantic-primary);
+}
+.chip[data-variant="color"]:hover:not(:disabled) {
+  background: var(--color-semantic-overlay-hovered, rgba(36, 38, 40, 0.05));
+}
+
+.chip[data-variant="color"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.chip[data-status="selected"] {
+  border: none;
+  background: var(--color-semantic-primary-subtle);
+}
