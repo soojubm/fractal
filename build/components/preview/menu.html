@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
+    <link rel="stylesheet" href="../../assets/css/fractal.css" />
+
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
     <link rel="stylesheet" href="../../assets/css/chip.css" />
+
+    <link rel="stylesheet" href="../../assets/css/menu.css" />
 
     <link rel="stylesheet" href="../../assets/css/checkbox.css" />
     <link rel="stylesheet" href="../../assets/css/radio.css" />
@@ -29,10 +33,19 @@
     <title>Default | Preview Layout</title>
   </head>
   <body>
-    <div style="padding:2rem"><nav class="" style="display:flex;flex-direction:column;gap:var(--space-1);">
+    <div style="padding:2rem"><ul class="component-checklist">
+  <li>TODO :: checkbox 클릭 영역</li>
+</ul>
+
+<br />
+
+<nav class="" style="display:flex;flex-direction:column;max-width:400px;gap:var(--space-1);">
   <small class="menu-label" style="display:block;margin:0 0 var(--space-1);color:#999;">MENU HEADING</small>
   <a class="menuitem" role="menuitem">
-    <i>👽</i>
+    <div class="checkbox" data-variant="square" data-size="small">
+      <input type="checkbox" id="checkbox-small" />
+      <label for="checkbox-small"></label>
+    </div>
     Menu item label
     <i class="menuitem-suffix">icon</i>
   </a>

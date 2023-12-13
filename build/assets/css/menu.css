@@ -1,0 +1,32 @@
+.menulist {
+  display: flex;
+  flex-direction: column;
+}
+.menuitem {
+  display: flex;
+  gap: var(--space-3);
+  line-height: 32px;
+  position: relative;
+}
+.menuitem.is-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.menuitem.is-disabled.hover:before {
+  /* TODO */
+  background: none;
+}
+/* TODO tile inset에 의존 */
+.menuitem:hover:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -1rem;
+  right: -1rem;
+  top: 0;
+  bottom: 0;
+  background: var(--color-semantic-hovered);
+}
+.menuitem-suffix {
+  margin-left: auto;
+}

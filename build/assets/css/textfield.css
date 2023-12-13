@@ -30,7 +30,6 @@ textarea {
 textarea:focus {
   -webkit-appearance: none;
 }
-/* // on safari */
 
 input:focus-visible {
   outline: 0;
@@ -109,26 +108,15 @@ input[type="search"]::-webkit-search-results-decoration {
   --textfield-radius: var(--radius);
   --textfield-text-color: 0;
 
+  --textfield-border: var(--border);
   --textfield-background-color: #fff;
   --textfield-border-color: var(--color-border);
   --textfield-helper-color: var(--color-content-tertiary);
   --textfield-label-color: var(--color-content-priamry);
 }
-.textfield[data-align="horizontal"] {
-  display: flex;
-  align-items: center;
-}
-.textfield[data-align="horizontal"] .textfield-label {
-  margin-bottom: 0;
-  flex: 0.3;
-}
-.textfield[data-align="horizontal"] .textfield-input {
-  flex: 0.7;
-}
 .textfield-label {
   display: flex;
   align-items: center;
-  /* TODO 6px */
   gap: 6px;
   margin-bottom: var(--textfield-label-margin-bottom);
   line-height: var(--size-small);
@@ -160,16 +148,11 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
 .textfield-helper {
   margin: var(--space-1) 0 0;
   color: var(--textfield-helper-color);
 }
-
-.textfield.is-error {
-  --textfield-border-color: var(--color-negative-accent);
-  --textfield-helper-color: var(--color-negative-accent);
-}
-
 /* .inputfield[data-type=search] {} */
 /* // 오른쪽에 2개의 액션이 있는 ui가 있었음. 좋은 ui는 아님. 리빌 + 클리어. 클리어가 있는데 리빌이 필요하지 않음 */
 .textfield-reveal {
@@ -182,10 +165,11 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   justify-content: center;
   width: var(--size-12);
-  height: var(--textfield-height);
+  height: var(--textfield-size);
   /* color:var(--color-primary); */
   position: absolute;
   top: calc(20px + 10px);
+  top: 29px;
   right: 0;
   font-size: 16px !important;
 }
@@ -193,16 +177,16 @@ input[type="search"]::-webkit-search-results-decoration {
 .textfield-prefix {
   display: flex;
   align-items: center;
-  height: var(--textfield-height);
+  width: var(--size-12);
+  height: var(--textfield-size);
   position: absolute;
   top: var(--size-small);
-  left: var(--space-4);
+  left: 0;
 }
 
 .textfield-suffix ~ .textfield-input {
   padding-right: 3rem;
 }
-
 .textfield-prefix ~ .textfield-input {
   padding-left: 3rem;
 }
@@ -215,13 +199,6 @@ input[type="search"]::-webkit-search-results-decoration {
   outline: 0;
 }
 
-.textfield.is-disabled {
-  --textfield-border-color: var(--color-border-disabled);
-  --textfield-background-color: var(--color-semantic-disabled);
-  --textfield-label-color: var(--color-content-disabled);
-  --textfield-helper-color: var(--color-border-disabled);
-}
-
 // pricefield
 .textfield[data-type="price"] .textfield-input {
   padding-right: 48px;
@@ -230,17 +207,15 @@ input[type="search"]::-webkit-search-results-decoration {
 .textfield[data-type="price"] .textfield-input:not(:placeholder) {
   font-weight: 600;
 }
+
+/* TODO:: util */
 .textfield[data-type="price"] .textfield-helper {
   text-align: right;
 }
 
-/* // android pattern */
-.is-focused .searchfield-input {
-  display: block;
-  width: calc(100% - var(--size-medium) - var(--space-after-avatar-medium));
-}
-.is-focused .searchfield-cancel {
-  right: 0;
+.textfield.is-error {
+  --textfield-border-color: var(--color-negative-accent);
+  --textfield-helper-color: var(--color-negative-accent);
 }
 
 .is-invalid .textfield-label {
@@ -251,6 +226,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .is-invalid .textfield-byte {
   color: var(--red800);
+}
+
+.textfield.is-disabled {
+  --textfield-border-color: var(--color-border-disabled);
+  --textfield-background-color: var(--color-semantic-disabled);
+  --textfield-label-color: var(--color-content-disabled);
+  --textfield-helper-color: var(--color-border-disabled);
 }
 
 /* sizes */
@@ -324,4 +306,31 @@ input[type="search"]::-webkit-search-results-decoration {
 .ui-state-highlight {
   background: var(--color-primary) !important;
   color: #fff !important;
+}
+
+/* 가로 */
+.textfield[data-align="horizontal"] {
+  display: flex;
+  align-items: center;
+}
+.textfield[data-align="horizontal"] .textfield-label {
+  margin-bottom: 0;
+  flex: 0.3;
+}
+.textfield[data-align="horizontal"] .textfield-input {
+  flex: 0.7;
+}
+
+.textfield[data-variant="underlined"] input {
+  padding-left: 0;
+  padding-right: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+.textfield[data-variant="ghost"] .textfield-input,
+.textfield[data-variant="ghost"] input {
+  border: none;
+  background-color: transparent;
 }

@@ -1,0 +1,6 @@
+.component-group {
+  padding: 1.5rem 0;
+  border-top: var(--border);
+}
+.component-group + .component-group {
+}

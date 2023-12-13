@@ -151,10 +151,19 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-419bc28e02e397b16d20bd21c66b261a-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display:flex;flex-direction:column;gap:var(--space-1);&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;component-checklist&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>TODO :: checkbox 클릭 영역<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display:flex;flex-direction:column;max-width:400px;gap:var(--space-1);&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;menu-label&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display:block;margin:0 0 var(--space-1);color:#999;&quot;</span>&gt;</span>MENU HEADING<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;menuitem&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;menuitem&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span>👽<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">data-variant</span>=<span class="hljs-string">&quot;square&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;small&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;checkbox-small&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;checkbox-small&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         Menu item label
         <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;menuitem-suffix&quot;</span>&gt;</span>icon<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -381,6 +390,40 @@
                 data-handle="badge"
             >
                 <span>Badge</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./breadcrumb.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="breadcrumb"
+                data-handle="breadcrumb"
+            >
+                <span>Breadcrumb</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1005,6 +1048,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./switch.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="switch"
+                data-handle="switch"
+            >
+                <span>Switch</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./tables.html"
                 data-role="tree-link"
                 
@@ -1249,40 +1326,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./breadcrumb.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="breadcrumb"
-                data-handle="breadcrumb"
-            >
-                <span>Breadcrumb</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./dialogs--default.html"
                 data-role="tree-link"
                 
@@ -1359,40 +1402,6 @@
                 data-handle="step"
             >
                 <span>Step</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./switch.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="switch"
-                data-handle="switch"
-            >
-                <span>Switch</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1645,6 +1654,8 @@
                 Back
             </button>
         </div>
+        
+    
         
     
         
@@ -2450,8 +2461,6 @@
 </div>
 
             </div>
-        
-    
         
     
         

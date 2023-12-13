@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
+    <link rel="stylesheet" href="../../assets/css/fractal.css" />
+
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
     <link rel="stylesheet" href="../../assets/css/chip.css" />
+
+    <link rel="stylesheet" href="../../assets/css/menu.css" />
 
     <link rel="stylesheet" href="../../assets/css/checkbox.css" />
     <link rel="stylesheet" href="../../assets/css/radio.css" />
@@ -29,9 +33,24 @@
     <title>Default | Preview Layout</title>
   </head>
   <body>
-    <div style="padding:2rem"><div class="switch">
-  <input type="checkbox" role="switch" id="newsletter" name="newsletter" />
-  <label for="newsletter">뉴스레터 받아보기</label>
-</div></div>
+    <div style="padding:2rem"><section class="group" style="flex-direction: column;">
+  <div class="switch" data-size="large">
+    <input type="checkbox" role="switch" id="switch-large" name="switch-large" />
+    <label for="switch-large">뉴스레터 받아보기</label>
+  </div>
+  <div class="switch" data-size="medium">
+    <input type="checkbox" role="switch" id="switch-medium" name="switch-medium" />
+    <label for="switch-medium">뉴스레터 받아보기</label>
+  </div>
+  <div class="switch" data-size="small">
+    <input type="checkbox" role="switch" id="switch-small" name="switch-small" />
+    <label for="switch-small">뉴스레터 받아보기</label>
+  </div>
+
+  <div class="switch" data-size="small">
+    <input type="checkbox" role="switch" id="switch-disabled" name="switch-disabled" disabled />
+    <label for="switch-disabled"></label>
+  </div>
+</section></div>
   </body>
 </html>

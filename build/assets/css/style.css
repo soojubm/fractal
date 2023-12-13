@@ -1,3 +1,41 @@
+.icon {
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-breadcrumb-divider {
+  background-image: url("/assets/icons/icon-breadcrumb-divider.png");
+  background-size: 16px;
+}
+
+.icon-system-verified {
+  background-image: url("/assets/icons/icon-system-verified.png");
+}
+.icon-system-warning {
+  background-image: url("/assets/icons/icon-system-warning.png");
+}
+
+.icon-caret-down {
+  background-image: url("/assets/icons/icon-caret-down.png");
+}
+.icon-chevron-down {
+  background: url("/assets/icons/icon-chevron-down.png") center center no-repeat;
+}
+
+.icon-search {
+  background: url("/assets/icons/icon-search.png") center center no-repeat;
+  background-size: 20px;
+}
+.icon-home {
+  background: url("/assets/icons/icon-home.png") center center no-repeat;
+  background-size: 20px;
+}
+.icon-clear {
+  background: url("/assets/icons/icon-clear.png") center center no-repeat;
+  background-size: 20px;
+}
+
 .group {
   display: flex;
   gap: var(--space-2);
@@ -134,38 +172,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 15.6px */
-}
-.menulist {
-  display: flex;
-  flex-direction: column;
-}
-.menuitem {
-  display: flex;
-  gap: var(--space-2);
-  line-height: 32px;
-  position: relative;
-}
-.menuitem.is-disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-.menuitem.is-disabled.hover:before {
-  /* TODO */
-  background: none;
-}
-/* TODO tile inset에 의존 */
-.menuitem:hover:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: -1rem;
-  right: -1rem;
-  top: 0;
-  bottom: 0;
-  background: var(--color-semantic-hovered);
-}
-.menuitem-suffix {
-  margin-left: auto;
 }
 
 .login-utils {

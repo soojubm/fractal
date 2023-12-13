@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
+    <link rel="stylesheet" href="../../assets/css/fractal.css" />
+
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
     <link rel="stylesheet" href="../../assets/css/chip.css" />
+
+    <link rel="stylesheet" href="../../assets/css/menu.css" />
 
     <link rel="stylesheet" href="../../assets/css/checkbox.css" />
     <link rel="stylesheet" href="../../assets/css/radio.css" />
@@ -30,13 +34,22 @@
   </head>
   <body>
     <div style="padding:2rem"><fieldset class="radio-group">
-  <div class="radio">
+  <div class="radio" data-size="large">
     <input type="radio" name="radio" id="radio1" value="radio1" checked />
     <label for="radio1">label</label>
   </div>
-  <div class="radio">
-    <input type="radio" name="radio" id="radio2" value="radio2" />
-    <label for="radio2">label</label>
+  <div class="radio" data-size="medium">
+    <input type="radio" name="radio" id="radio1" value="radio1" checked />
+    <label for="radio1">label</label>
+  </div>
+  <div class="radio" data-size="small">
+    <input type="radio" name="radio" id="radio1" value="radio1" checked />
+    <label for="radio1">label</label>
+  </div>
+  <hr />
+  <div class="radio" data-size="medium">
+    <input type="radio" name="radio" id="radio2" value="radio2" disabled />
+    <label for="radio2">Radio disabled</label>
   </div>
 </fieldset></div>
   </body>

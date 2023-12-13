@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
+    <link rel="stylesheet" href="../../assets/css/fractal.css" />
+
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
     <link rel="stylesheet" href="../../assets/css/chip.css" />
+
+    <link rel="stylesheet" href="../../assets/css/menu.css" />
 
     <link rel="stylesheet" href="../../assets/css/checkbox.css" />
     <link rel="stylesheet" href="../../assets/css/radio.css" />
@@ -54,14 +58,26 @@
 
 <br /><hr /><br />
 
+<div class="dropdown">
+  <button class="button" data-variant="text" data-size="small" data-status="">
+    메뉴
+    <i class="button-suffix icon-chevron-down"></i>
+  </button>
+</div>
+
+<br /><hr /><br />
+
 <div class="dropdown" style="position:relative;">
   <button class="button" data-variant="" data-size="small" data-status="">
     메뉴
-    <i class="button-suffix" style="margin-top:-2px;transform:rotate(180deg);">
-      <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path></svg>
+    <i class="button-suffix icon-chevron-down">
     </i>
   </button>
-  <div class="tile" data-variant="elevated" style="width:180px;padding:var(--space-1) var(--space-4);position:absolute;left:0;top:calc(var(--size-10) + var(--space-1));">
+  <div
+    class="tile"
+    data-variant="elevated"
+    style="width:180px;padding:var(--space-1) var(--space-4);position:absolute;left:0;top:calc(var(--size-10) + var(--space-1));"
+  >
     <a class="menuitem" role="menuitem">
       <i>👽</i>
       Edit
@@ -74,8 +90,6 @@
       <i class="menuitem-suffix">icon</i>
     </a>
   </div>
-</div>
-
-</div>
+</div></div>
   </body>
 </html>

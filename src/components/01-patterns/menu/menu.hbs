@@ -1,7 +1,16 @@
-<nav class="" style="display:flex;flex-direction:column;gap:var(--space-1);">
+<ul class="component-checklist">
+  <li>TODO :: checkbox 클릭 영역</li>
+</ul>
+
+<br />
+
+<nav class="" style="display:flex;flex-direction:column;max-width:400px;gap:var(--space-1);">
   <small class="menu-label" style="display:block;margin:0 0 var(--space-1);color:#999;">MENU HEADING</small>
   <a class="menuitem" role="menuitem">
-    <i>👽</i>
+    <div class="checkbox" data-variant="square" data-size="small">
+      <input type="checkbox" id="checkbox-small" />
+      <label for="checkbox-small"></label>
+    </div>
     Menu item label
     <i class="menuitem-suffix">icon</i>
   </a>
