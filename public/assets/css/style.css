@@ -4,6 +4,13 @@
   background-repeat: no-repeat;
 }
 
+/* icon과 icon-button 구분. 사이즈가 애매 */
+.icon[data-size="size16"] {
+  width: 16px;
+  height: 16px;
+  background-size: 16px;
+}
+
 .icon-breadcrumb-divider {
   background-image: url("/assets/icons/icon-breadcrumb-divider.png");
   background-size: 16px;
@@ -21,6 +28,9 @@
 }
 .icon-chevron-down {
   background: url("/assets/icons/icon-chevron-down.png") center center no-repeat;
+}
+.icon-chevron-right {
+  background: url("/assets/icons/icon-chevron-right.png") center center no-repeat;
 }
 
 .icon-search {
@@ -187,7 +197,8 @@
 /* .util-color-accent? */
 
 .link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   color: var(--color-content-primary);
 }
 
