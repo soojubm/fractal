@@ -21,9 +21,6 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   /* 이상 링크 */
-
-  padding: var(--space-2) 0;
-
   position: relative;
   --checkbox-size: var(--size-tiny);
   --checkbox-size: 20px;

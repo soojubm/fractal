@@ -1,0 +1,50 @@
+<ul>
+  <li>모바일 친화적이지 않음</li>
+  <li>작은 공간에 너무 많은 인풋이 들어가거나 하나의 칼럼만 남은 경우의 예외 처리. 크기의 변화가 너무 다이내믹함.</li>
+  <li>한 번에 너무 많은 입력을 받기 때문에 개발이 어렵고 오류가 발생할 가능성이 크다.</li>
+  <li><del>홀수 칼럼 고아로 남았을 때 비어있는 tr을 넣어주어야 합니다.</del></li>
+</ul>
+<br />
+<section>
+  <table class="list" style="max-width:1520px;">
+    <tbody>
+      <tr>
+        <th>제목</th>
+        <td>내용</td>
+      </tr>
+      <tr>
+        <th>제목</th>
+        <td>
+          <div class="group" style="gap:1.5rem;">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox" checked />
+              <label for="checkbox">옵션 하나</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">옵션 둘</label>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr style="width:100%">
+        <th>제목</th>
+        <td>
+          중간에 1칼럼이 들어갈 때
+        </td>
+      </tr>
+      <tr>
+        <th>제목</th>
+        <td>
+          <div class="textfield" data-size="small">
+            <input class="textfield-input" type="text" id="textfield1" placeholder="test" />
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <footer class="group" style="justify-content: center;margin:24px 0 0;">
+    <button class="button" data-variant="tertiary">초기화</button>
+    <button class="button" data-variant="filled">조회</button>
+  </footer>
+</section>

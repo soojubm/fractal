@@ -577,3 +577,54 @@ hr {
   justify-content: flex-end;
   margin: var(--space-4) 0 0;
 }
+
+/* list */
+.list {
+  font-size: 14px;
+}
+.list {
+  border-collapse: collapse;
+}
+.list tbody {
+  display: flex;
+  flex-wrap: wrap;
+  border-style: solid;
+  /* border-width: 1px 0 0 1px; */
+  border-width: 1px 0 1px 0;
+
+  border-color: var(--color-border-primary);
+}
+.list tbody tr {
+  width: 50%;
+  height: 48px;
+  /* border-style: solid !important;
+  border-width: 0 1px 1px 0 !important;
+  border-color: var(--color-border-disabled); */
+  border-bottom: 1px solid var(--color-border-disabled);
+  box-sizing: border-box;
+}
+.list tbody tr + tr {
+  /* 2칼럼일때오른쪽최상단 */
+}
+.list tbody tr:nth-last-of-type(1),
+.list tbody tr:nth-last-of-type(1) th {
+  border-bottom: 0;
+}
+.list tbody tr th {
+  width: 300px;
+  padding: 14px 24px;
+  box-sizing: border-box;
+  background-color: var(--color-semantic-surface-layer);
+  vertical-align: middle;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border-disabled);
+}
+.list tbody tr td {
+  width: 460px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.list tbody tr th,
+.list tbody tr td {
+  height: 48px;
+}
