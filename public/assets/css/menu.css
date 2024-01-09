@@ -27,6 +27,11 @@
   bottom: 0;
   background: var(--color-semantic-hovered);
 }
-.menuitem-suffix {
+.menuitem-trailing {
+  display: flex;
+  align-items: center;
   margin-left: auto;
+}
+
+.menuitem-leading {
 }

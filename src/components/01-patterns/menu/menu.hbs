@@ -15,13 +15,60 @@
     <i class="menuitem-suffix">icon</i>
   </a>
   <a class="menuitem" role="menuitem">
-    <i>👽</i>
+    <div class="radio" data-size="medium">
+      <input type="radio" name="radio" id="radio1" value="radio1" checked />
+      <label for="radio1"></label>
+    </div>
     Menu item label
     <i class="menuitem-suffix">icon</i>
   </a>
   <a class="menuitem" role="menuitem">
     <i>👽</i>
     Menu item label
-    <i class="menuitem-suffix">icon</i>
+    <div class="menuitem-trailing">
+      <div class="switch" data-size="small">
+        <input type="checkbox" role="switch" id="switch-disabled" name="switch-disabled" />
+        <label for="switch-disabled"></label>
+      </div>
+    </div>
   </a>
 </nav>
+
+{{!-- <div style="display:flex;flex-direction:column;max-width:400px;gap:.5rem;">
+  <a role="menuitem" class="item" href="#">
+    <div class="avatar" data-size="a2">
+      <img class="avatar-image" src="{{path '/assets/avatar.png'}}" alt="avatar {{size}}" />
+    </div>
+    <span class="item-label">메뉴아이템</span>
+    <button class="item-action button" data-variant="tertiary" data-size="small">팔로우</button>
+  </a>
+
+  <a role="menuitem" class="item" href="#">
+    <div class="avatar" data-size="a2">
+      <img class="avatar-image" src="{{path '/assets/avatar.png'}}" alt="avatar {{size}}" />
+    </div>
+    <span class="item-label">메뉴아이템</span>
+    <button class="item-action button" data-variant="tertiary" data-size="small">팔로우</button>
+  </a>
+
+  <a role="menuitem" class="item" href="#">
+    <div class="item-leading checkbox" data-variant="square">
+      <input type="checkbox" id="checkbox-small" />
+      <label for="checkbox-small"></label>
+    </div>
+    <span class="item-label">메뉴아이템</span>
+  </a>
+
+  <a role="menuitem" class="item" href="#">
+    <div class="item-leading radio" data-variant="square">
+      <input type="radio" id="checkbox-small" />
+      <label for="radio-small"></label>
+    </div>
+    <span class="item-label">메뉴아이템</span>
+  </a>
+
+  <a role="menuitem" class="item" href="#">
+    <span class="item-label">메뉴아이템</span>
+
+  </a>
+</div> --}}

@@ -3,7 +3,7 @@
 
 .button {
   --button-min-width: 5rem;
-  --button-height: var(--size-12);
+  --button-height: 40px;
 
   --button-border: var(--border);
   --button-radius: var(--radius);
@@ -20,6 +20,7 @@
   width: auto;
   min-width: var(--button-min-width);
   height: var(--button-height);
+  gap: var(--space-2);
   padding: 0 var(--space-4);
   border: var(--button-border);
   border-radius: var(--button-radius);
@@ -91,11 +92,6 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
-.button {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-}
 
 .icon-button {
   height: fit-content;
@@ -132,7 +128,7 @@
 .icon-button[data-variant="subtle"],
 .button[data-variant="subtle"] {
   --button-border: 1px solid rgba(242, 242, 245, 1);
-  background: rgba(242, 242, 245, 1);
+  background: var(--color-semantic-subtle);
   color: var(--color-content-primary);
 }
 .icon-button[data-variant="subtle"],
@@ -154,7 +150,6 @@
 .icon-button[data-size="large"] {
 }
 
-.icon,
 .icon-button {
   display: flex;
   align-items: center;
@@ -176,25 +171,25 @@
   bottom: -0.25rem;
 } */
 
-.icon[data-size="large"],
-.icon-button[data-size="large"] {
+.icon[data-size="xlarge"],
+.icon-button[data-size="xlarge"] {
   width: 48px;
   height: 48px;
 }
-.icon[data-size="medium"],
-.icon-button[data-size="medium"] {
+.icon[data-size="large"],
+.icon-button[data-size="large"] {
   width: 40px;
   height: 40px;
 }
-.icon[data-size="small"],
-.icon-button[data-size="small"] {
+.icon[data-size="medium"],
+.icon-button[data-size="medium"] {
   width: 32px;
   height: 32px;
 }
-.icon[data-size="tiny"],
-.icon-button[data-size="tiny"] {
-  width: 20px;
-  height: 20px;
+.icon[data-size="small"],
+.icon-button[data-size="small"] {
+  width: 24px;
+  height: 24px;
 }
 
 /* TODO */
