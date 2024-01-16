@@ -8,6 +8,9 @@
   --radio-size: var(--size-5);
   --radio-checked-size: 20px;
   --radio-checked-inset: 4px;
+
+  display: flex;
+  align-items: center;
   position: relative;
 }
 

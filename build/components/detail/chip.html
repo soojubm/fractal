@@ -153,6 +153,7 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>TODO :: chip 내부 아이콘의 크기 규칙<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>아바타가 있는 것<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
@@ -183,12 +184,31 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;group&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;chip&quot;</span> <span class="hljs-attr">data-status</span>=<span class="hljs-string">&quot;selected&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-home&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-home&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;small&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
         heading
     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;chip&quot;</span> <span class="hljs-attr">data-status</span>=<span class="hljs-string">&quot;selected&quot;</span>&gt;</span>
         trailing
-        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-home&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-home&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;small&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;group&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;chip&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;avatar&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;a2&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;avatar-image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/avatar.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;avatar &quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        with avatar
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;chip&quot;</span>&gt;</span>
+        trailing
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-close&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;size16&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;chip&quot;</span>&gt;</span>
+        trailing
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-caret-down&quot;</span> <span class="hljs-attr">data-size</span>=<span class="hljs-string">&quot;size16&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
@@ -701,6 +721,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./switch.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="switch"
+                data-handle="switch"
+            >
+                <span>Switch</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./test11.html"
                 data-role="tree-link"
                 
@@ -1103,40 +1157,6 @@
                 data-handle="pagehead"
             >
                 <span>Pagehead</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./switch.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="switch"
-                data-handle="switch"
-            >
-                <span>Switch</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1617,40 +1637,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./menuitem.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="menuitem"
-                data-handle="menuitem"
-            >
-                <span>Menuitem</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./tabs.html"
                 data-role="tree-link"
                 
@@ -1923,6 +1909,8 @@
 </div>
 
             </div>
+        
+    
         
     
         
@@ -2386,8 +2374,6 @@
         
     
         
-    
-        
             
             <div class="Navigation-group" data-role="variant-group" data-component="dialogs">
                 
@@ -2645,8 +2631,6 @@
 </div>
 
             </div>
-        
-    
         
     
         

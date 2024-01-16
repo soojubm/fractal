@@ -4,6 +4,7 @@
   justify-content: center;
   min-width: var(--size-medium);
   height: var(--size-8);
+  height: 32px;
   gap: var(--space-2);
   padding: 0 var(--space-4);
   border: var(--border);
@@ -61,4 +62,12 @@
 .chip[data-status="selected"] {
   border: none;
   background: var(--color-semantic-primary-subtle);
+}
+
+.chip .icon {
+  margin: 0 -4px;
+}
+
+.chip .avatar {
+  margin: 0 0 0 -12px;
 }

@@ -140,12 +140,10 @@ input[type="search"]::-webkit-search-results-decoration {
   /* box-shadow: var(--status-hover); */
   outline: 2px solid var(--color-point);
 }
-.textfield-input:read-only {
-  color: var(--color-text-light);
-  cursor: default;
-}
 .textfield-input:disabled {
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  border-color: var(--color-border-disabled);
+  background-color: var(--color-background-disabled);
   cursor: not-allowed;
 }
 
@@ -164,20 +162,18 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--size-12);
+  width: 48px;
   height: var(--textfield-size);
-  /* color:var(--color-primary); */
   position: absolute;
   top: calc(20px + 10px);
   top: 29px;
   right: 0;
-  font-size: 16px !important;
 }
 
 .textfield-prefix {
   display: flex;
   align-items: center;
-  width: var(--size-12);
+  width: var(--textfield-size);
   height: var(--textfield-size);
   position: absolute;
   top: var(--size-small);
@@ -189,14 +185,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .textfield-prefix ~ .textfield-input {
   padding-left: 3rem;
-}
-
-.textfield-input:read-only {
-  background-color: #f8f8f8;
-  border-color: #e5e6e8;
-}
-.textfield-input:read-only:focus {
-  outline: 0;
 }
 
 // pricefield
@@ -230,8 +218,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .textfield.is-disabled {
   --textfield-border-color: var(--color-border-disabled);
-  --textfield-background-color: var(--color-semantic-disabled);
-  --textfield-label-color: var(--color-content-disabled);
+  --textfield-background-color: var(--color-background-disabled);
+  --textfield-label-color: var(--color-text-disabled);
   --textfield-helper-color: var(--color-border-disabled);
 }
 
@@ -260,6 +248,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 [data-size="small"] .textfield-input {
   height: var(--size-8);
+  height: 32px;
   /* padding-left:2.25rem; */
 }
 
@@ -333,4 +322,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .textfield[data-variant="ghost"] input {
   border: none;
   background-color: transparent;
+}
+
+input.textfield-input:read-only:not(:disabled) {
+  background-color: #f8f8f8;
+  border-color: #e5e6e8;
+}
+.textfield-input:read-only:focus {
+  outline: 0;
 }

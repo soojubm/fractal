@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../../assets/css/variables.css" />
 
     <link rel="stylesheet" href="../../assets/css/reset.css" />
+
+    <link rel="stylesheet" href="../../assets/css/icon.css" />
+
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <link rel="stylesheet" href="../../assets/css/fractal.css" />
@@ -15,7 +18,9 @@
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
     <link rel="stylesheet" href="../../assets/css/chip.css" />
+    <link rel="stylesheet" href="../../assets/css/link.css" />
 
+    <link rel="stylesheet" href="../../assets/css/navbar.css" />
     <link rel="stylesheet" href="../../assets/css/menu.css" />
 
     <link rel="stylesheet" href="../../assets/css/checkbox.css" />
@@ -35,6 +40,7 @@
   <body>
     <div style="padding:2rem"><ul>
   <li>TODO :: chip 내부 아이콘의 크기 규칙</li>
+  <li>아바타가 있는 것</li>
 </ul>
 
 <br />
@@ -65,12 +71,31 @@
 
 <div class="group">
   <button class="chip" data-status="selected">
-    <i class="icon icon-home"></i>
+    <i class="icon icon-home" data-size="small"></i>
     heading
   </button>
   <button class="chip" data-status="selected">
     trailing
-    <i class="icon icon-home"></i>
+    <i class="icon icon-home" data-size="small"></i>
+  </button>
+</div>
+
+<br />
+
+<div class="group">
+  <button class="chip">
+    <div class="avatar" data-size="a2">
+      <img class="avatar-image" src="../../assets/avatar.png" alt="avatar " />
+    </div>
+    with avatar
+  </button>
+  <button class="chip">
+    trailing
+    <i class="icon icon-close" data-size="size16"></i>
+  </button>
+  <button class="chip">
+    trailing
+    <i class="icon icon-caret-down" data-size="size16"></i>
   </button>
 </div></div>
   </body>

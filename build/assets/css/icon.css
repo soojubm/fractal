@@ -1,0 +1,49 @@
+.icon {
+  width: 16px;
+  height: 16px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* icon과 icon-button 구분. 사이즈가 애매 */
+.icon[data-size="size16"] {
+  width: 16px;
+  height: 16px;
+  background-size: 16px;
+}
+
+.icon-breadcrumb-divider {
+  background-image: url("/assets/icons/icon-breadcrumb-divider.png");
+  background-size: 16px;
+}
+
+.icon-system-verified {
+  background-image: url("/assets/icons/icon-system-verified.png");
+}
+.icon-system-warning {
+  background-image: url("/assets/icons/icon-system-warning.png");
+}
+
+.icon-caret-down {
+  background-image: url("/assets/icons/icon-caret-down.png");
+}
+.icon-chevron-down {
+  background-image: url("/assets/icons/icon-chevron-down.png");
+}
+.icon-chevron-right {
+  background-image: url("/assets/icons/icon-chevron-right.png");
+}
+
+.icon-search {
+  background-image: url("/assets/icons/icon-search.png");
+}
+.icon-home {
+  background-image: url("/assets/icons/icon-home.png");
+}
+.icon-clear {
+  background-image: url("/assets/icons/icon-clear.png");
+}
+.icon-close {
+  background-image: url("/assets/icons/icon-close.png");
+}

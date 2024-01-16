@@ -17,13 +17,23 @@
     <i class="menuitem-suffix">icon</i>
   </a>
   <a class="menuitem" role="menuitem">
-    <i>👽</i>
+    <div class="radio" data-size="medium">
+      <input type="radio" name="radio" id="radio1" value="radio1" checked />
+      <label for="radio1"></label>
+    </div>
     Menu item label
     <i class="menuitem-suffix">icon</i>
   </a>
   <a class="menuitem" role="menuitem">
     <i>👽</i>
     Menu item label
-    <i class="menuitem-suffix">icon</i>
+    <div class="menuitem-trailing">
+      <div class="switch" data-size="small">
+        <input type="checkbox" role="switch" id="switch-disabled" name="switch-disabled" />
+        <label for="switch-disabled"></label>
+      </div>
+    </div>
   </a>
 </nav>
+
+

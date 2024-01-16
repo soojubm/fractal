@@ -1,31 +1,20 @@
 .badge {
+  --badge-background-color: var(--color-semantic-primary-subtle, #f1f3fe);
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
   height: 28px;
-  padding: 0 var(--spacing-025, 10px);
+  padding: 0 10px;
 
-  gap: 10px;
+  gap: 8px;
 
   border-radius: var(--radius-radius-full, 999px);
-  background: var(--color-semantic-primary-subtle, #f1f3fe);
+  background: var(--badge-background-color);
 
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-}
-
-.badge[data-variant="positive"] {
-  background-color: var(--color-positive-subtle);
-  color: var(--color-positive-accent);
-}
-.badge[data-variant="negative"] {
-  background-color: var(--color-negative-subtle);
-  color: var(--color-negative-accent);
-}
-.badge[data-variant="warning"] {
-  background-color: var(--color-warning-subtle);
-  color: var(--color-warning-accent);
 }
 
 .badge[data-size="medium"] {
@@ -44,11 +33,11 @@
 }
 
 .badge[data-variant="filled"] {
-  background: var(--color-semantic-primary);
+  --badge-background-color: var(--color-semantic-primary);
   color: #fff;
 }
 .badge[data-variant="subtle"] {
-  background: var(--color-semantic-primary-subtle);
+  --badge-background-color: var(--color-semantic-primary-subtle);
   color: var(--color-semantic-primary);
 }
 .badge[data-variant="lined"] {
@@ -56,6 +45,64 @@
   background: transparent;
 }
 
+.badge[data-shape="square"] {
+  border-radius: var(--radius-md);
+}
+.badge[data-shape="circle"] {
+}
+.badge[data-shape="ghost"] {
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+}
+
+.badge[data-variant="positive"] {
+  --badge-background-color: var(--color-positive-subtle);
+  color: var(--color-positive-accent);
+}
+.badge[data-variant="negative"] {
+  --badge-background-color: var(--color-negative-subtle);
+  color: var(--color-negative-accent);
+}
+.badge[data-variant="warning"] {
+  --badge-background-color: var(--color-warning-subtle);
+  color: var(--color-warning-accent);
+}
+.badge[data-variant="information"] {
+  --badge-background-color: var(--color-information-subtle);
+  color: var(--color-information-accent);
+}
+.badge[data-variant="standby"] {
+  --badge-background-color: #575b63;
+  color: #6e7781;
+}
+
+.badge[data-badge="true"]:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  /* background-color: var(--badge-background-color); */
+}
+
+.badge[data-variant="positive"][data-badge="true"]:before {
+  background-color: var(--color-positive-accent);
+}
+.badge[data-variant="negative"][data-badge="true"]:before {
+  background-color: var(--color-negative-accent);
+}
+.badge[data-variant="warning"][data-badge="true"]:before {
+  background-color: var(--color-warning);
+}
+.badge[data-variant="information"][data-badge="true"]:before {
+  background-color: var(--color-information-accent);
+}
+.badge[data-variant="standby"][data-badge="true"]:before {
+  background-color: #6e7781;
+}
+
+/* duplicated */
 .indicator {
   display: block;
   width: 10px;
