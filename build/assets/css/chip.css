@@ -64,10 +64,10 @@
   background: var(--color-semantic-primary-subtle);
 }
 
-.chip .icon {
-  margin: 0 -4px;
-}
-
 .chip .avatar {
   margin: 0 0 0 -12px;
+}
+
+.chip .icon {
+  margin: 0 -4px;
 }

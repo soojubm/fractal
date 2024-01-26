@@ -1,4 +1,5 @@
 .icon {
+  display: block;
   width: 16px;
   height: 16px;
   background-size: 100%;
@@ -7,15 +8,40 @@
 }
 
 /* icon과 icon-button 구분. 사이즈가 애매 */
+/* xs, s , m , l, xl :: 5종 */
 .icon[data-size="size16"] {
   width: 16px;
   height: 16px;
-  background-size: 16px;
+}
+.icon[data-size="xsmall"],
+.icon[data-size="size24"] {
+  width: 24px;
+  height: 24px;
+}
+.icon[data-size="small"],
+.icon[data-size="size32"] {
+  width: 32px;
+  height: 32px;
+}
+.icon[data-size="medium"],
+.icon[data-size="size40"] {
+  width: 40px;
+  height: 40px;
+}
+.icon[data-size="large"],
+.icon[data-size="size48"] {
+  width: 48px;
+  height: 48px;
+}
+
+.icon[data-size="xlarge"],
+.icon[data-size="size56"] {
+  width: 56px;
+  height: 56px;
 }
 
 .icon-breadcrumb-divider {
   background-image: url("/assets/icons/icon-breadcrumb-divider.png");
-  background-size: 16px;
 }
 
 .icon-system-verified {
