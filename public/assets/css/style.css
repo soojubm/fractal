@@ -2,14 +2,19 @@
   display: flex;
   gap: var(--space-2);
 }
+.group[data-variant="tight"] {
+  gap: 6px;
+}
+.group[data-variant="default"] {
+  gap: var(--space-2);
+}
+.group[data-variant="loose"] {
+  gap: var(--space-3);
+}
 
-.group[data-align="vertical"] {
+/* .group[data-align="vertical"] {
   flex-direction: column;
-}
-
-.group[data-size="small"] {
-  gap: var(--space-1);
-}
+} */
 
 .item {
   display: flex;
