@@ -6,9 +6,11 @@
 </ul>
 <br />
 <section>
-  <table class="list" style="max-width:1520px;">
-    <tbody>
-      <tr>
+
+<table> <caption>Favorite and Least Favorite Things</caption> <tr> <th></th><th></th> <th>Bob</th> <th>Alice</th> </tr> <tr> <th rowspan="2">Favorite</th> <th>Color</th> <td>Blue</td> <td>Purple</td> </tr> <tr> <th>Flavor</th> <td>Banana</td> <td>Chocolate</td> </tr> <tr> <th rowspan="2">Least Favorite</th> <th>Color</th> <td>Yellow</td> <td>Pink</td> </tr> <tr> <th>Flavor</th> <td>Mint</td> <td>Walnut</td> </tr> </table>
+
+
+      {{!-- <tr>
         <th>제목</th>
         <td>내용</td>
       </tr>
@@ -26,22 +28,53 @@
             </div>
           </div>
         </td>
-      </tr>
-      <tr style="width:100%">
-        <th>제목</th>
-        <td>
-          중간에 1칼럼이 들어갈 때
-        </td>
-      </tr>
-      <tr>
-        <th>제목</th>
-        <td>
-          <div class="textfield" data-size="small">
-            <input class="textfield-input" type="text" id="textfield1" placeholder="test" />
+      </tr> --}}
+
+  <header style="padding:20px 24px;background:#eee;border-radius:8px 8px 0 0;border-bottom:var(--border);">
+    <h2 class="text" data-variant="heading4">약관동의 및 사업자확인</h2>
+  </header>
+  <table class="list" style="max-width:1520px;">
+    <tr>
+      <th rowspan="2">제목</th>
+      <th>질문내용</th>
+      <td>
+        중간에 1칼럼이 들어갈 때
+      </td>
+    </tr>
+    <tr>
+      <th>질문내용</th>
+      <td>
+        <div class="group" style="gap:2rem;">
+          <div class="textfield" data-size="small" data-label="false" style="display:flex;align-items:center;gap: 1rem;">
+            <label class="textfield-label" for="id" style="margin-bottom:0;font-weight:normal;font-size:14px;">답변유형</label>
+            <select class="textfield-input" id="id" style="width:172px;">
+              <option selected="true">옵션 1</option>
+            </select>
+            <div class="textfield-suffix">
+              <i class="icon icon-caret-down"></i>
+            </div>
           </div>
-        </td>
-      </tr>
-    </tbody>
+          <div class="textfield" data-size="small" data-label="false" style="display: flex;align-items:center;gap: 1rem;">
+            <label class="textfield-label" for="id" style="margin-bottom:0;font-weight:normal;font-size:14px;">답변유형</label>
+            <select class="textfield-input" id="id" style="width:172px;">
+              <option selected="true">옵션 1</option>
+            </select>
+            <div class="textfield-suffix">
+              <i class="icon icon-caret-down"></i>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>질문내용</th>
+      <th></th>
+      <td>
+        <div class="textfield" data-size="small">
+          <input class="textfield-input" type="text" id="textfield1" placeholder="test" />
+        </div>
+      </td>
+    </tr>
   </table>
   <footer class="group" style="justify-content: center;margin:24px 0 0;">
     <button class="button" data-variant="tertiary">초기화</button>

@@ -116,20 +116,20 @@ input[type="radio"]:checked + label + *,
   margin-left: -2px;
 }
 
-.checkbox[data-variant="plain"] .checkbox input ~ label:before {
+.checkbox[data-variant="plain"] input ~ label:before {
   border: none;
   background-color: transparent;
 }
-.checkbox[data-variant="plain"] .checkbox input ~ label:after {
+.checkbox[data-variant="plain"] input ~ label:after {
   display: block;
   border-color: #ccc;
   width: 10px;
   height: 4px;
   top: 6px;
 }
-.checkbox[data-variant="plain"] .checkbox input:checked ~ label:before {
+.checkbox[data-variant="plain"] input:checked ~ label:before {
 }
-.checkbox[data-variant="plain"] .checkbox input:checked ~ label:after {
+.checkbox[data-variant="plain"] input:checked ~ label:after {
   border-color: var(--color-primary);
 }
 

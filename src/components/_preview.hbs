@@ -33,9 +33,19 @@
     <link rel="stylesheet" href="{{path '/assets/css/empty-state.css'}}" />
     <link rel="stylesheet" href="{{path '/assets/css/step.css'}}" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+    {{! full numbers:: first - last }}
+    <script>
+      {{! const options = { pagingType: 'full_numbers', scrollY: 300, lengthMenu: [ [10, 25, 50, -1], [10, 25, 50, 'All'] ],  }; }}
+      window.addEventListener('load', () => { setTimeout(() => { new DataTable('#example'); }, 100) })
+    </script>
+    <link rel="stylesheet" href="{{path '/assets/css/tables.css'}}" />
+
     <title>{{_target.label}} | Preview Layout</title>
   </head>
   <body>
     <div style="padding:2rem">{{{yield}}}</div>
+
   </body>
 </html>
