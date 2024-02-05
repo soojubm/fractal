@@ -28,6 +28,11 @@
 }
 
 /* ring */
+.text[data-variant="heading3"] {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+}
 .text[data-variant="heading4"] {
   font-size: 24px;
   font-weight: 700;
