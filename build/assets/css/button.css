@@ -4,14 +4,9 @@
 .button {
   --button-min-width: 5rem;
   --button-height: 40px;
-
   --button-border: var(--border);
   --button-radius: var(--radius);
-
-  --button-color: 0;
-
   --button-font-weight: var(--font-weight-bold);
-
   --button-background-color: null;
 
   display: inline-flex;

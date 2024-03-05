@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <link rel="stylesheet" href="../../assets/css/fractal.css" />
+    <link rel="stylesheet" href="../../assets/css/breadcrumb.css" />
 
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
@@ -34,6 +35,13 @@
 
     <link rel="stylesheet" href="../../assets/css/empty-state.css" />
     <link rel="stylesheet" href="../../assets/css/step.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+    <script>
+      window.addEventListener('load', () => { setTimeout(() => { new DataTable('#example'); }, 100) })
+    </script>
+    <link rel="stylesheet" href="../../assets/css/tables.css" />
 
     <title>Default | Preview Layout</title>
   </head>
@@ -98,7 +106,9 @@
   <div class="textfield is-error">
     <label class="textfield-label" for="id">비밀번호</label>
     <input class="textfield-input" type="password" id="id" placeholder="숫자, 특수문자 포함 8자 이상" />
-    <div class="textfield-suffix icon icon-system-warning"></div>
+    <div class="textfield-suffix">
+      <i class="icon icon-system-warning" data-size="20"></i>
+    </div>
     <p class="textfield-helper">helper text</p>
   </div>
 
@@ -154,5 +164,6 @@
     <input class="textfield-input" type="email" id="id" placeholder="soojubm@gmail.com" />
   </div>
 </div></div>
+
   </body>
 </html>

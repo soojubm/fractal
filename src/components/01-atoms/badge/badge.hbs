@@ -1,37 +1,45 @@
 <ul>
-  <li>status/ category는 다양함.</li>
+  <li>variant: 'filled' | 'subtle' | 'lined'</li>
+  <li>shape: 'ghost' | </li>
+  <li>size: </li>
+  <li>status badge / category badge which is clickable?</li>
 </ul>
-
 <br />
-
-<div class="group">
-  <em class="badge" data-variant="filled">variant filled</em>
-  <em class="badge" data-variant="subtle">variant subtle</em>
-  <em class="badge" data-variant="lined">variant lined</em>
-</div>
+<section class="tile" data-variant="outlined">
+  <div class="group">
+    <em class="badge" data-variant="filled">variant filled</em>
+    <em class="badge" data-variant="subtle">variant subtle</em>
+    <em class="badge" data-variant="lined">variant lined</em>
+  </div>
+</section>
 <br />
-<div class="group">
-  <em class="badge" data-variant="positive">status positive</em>
-  <em class="badge" data-variant="warning">status warning</em>
-  <em class="badge" data-variant="negative">status negative</em>
-</div>
+<section class="tile" data-variant="outlined">
+  <div class="group">
+    <em class="badge" data-size="medium">size medium</em>
+    <em class="badge" data-size="small">size small</em>
+    <em class="badge" data-size="tiny">size tiny</em>
+  </div>
+</section>
 <br />
-<div class="group">
-  <em class="badge" data-variant="positive" data-shape="square" data-badge="true">
-    with badge
-  </em>
-  <em class="badge" data-variant="warning" data-shape="circle" data-badge="true">with badge</em>
-  <em class="badge" data-variant="negative" data-shape="ghost" data-badge="true">with badge</em>
-  <em class="badge" data-variant="information" data-shape="ghost" data-badge="true">with badge</em>
-  <em class="badge" data-variant="standby" data-shape="ghost" data-badge="true">with badge</em>
-  {{! <em class="badge" data-variant="positive" data-shape="square">
+<section class="tile" data-variant="outlined">
+  <div class="group">
+    <em class="badge" data-variant="positive">status positive</em>
+    <em class="badge" data-variant="warning">status warning</em>
+    <em class="badge" data-variant="negative">status negative</em>
+  </div>
+</section>
+<br />
+<section class="tile" data-variant="outlined">
+  <div class="group" data-variant="loose">
+    <em class="badge" data-variant="positive" data-shape="ghost" data-badge="true">
+      with badge
+    </em>
+    <em class="badge" data-variant="warning" data-shape="ghost" data-badge="true">with badge</em>
+    <em class="badge" data-variant="negative" data-shape="ghost" data-badge="true">with badge</em>
+    <em class="badge" data-variant="information" data-shape="ghost" data-badge="true">with badge</em>
+    <em class="badge" data-variant="standby" data-shape="ghost" data-badge="true">with badge</em>
+    {{! <em class="badge" data-variant="positive" data-shape="square">
     <span class="indicator"></span>shape square
   </em> }}
-</div>
-<br />
-<div class="group">
-  <em class="badge" data-size="medium">size medium</em>
-  <em class="badge" data-size="small">size small</em>
-  <em class="badge" data-size="tiny">size tiny</em>
-</div>
-<br />
+  </div>
+</section>

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <link rel="stylesheet" href="../../assets/css/fractal.css" />
+    <link rel="stylesheet" href="../../assets/css/breadcrumb.css" />
 
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
@@ -35,10 +36,49 @@
     <link rel="stylesheet" href="../../assets/css/empty-state.css" />
     <link rel="stylesheet" href="../../assets/css/step.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+    <script>
+      window.addEventListener('load', () => { setTimeout(() => { new DataTable('#example'); }, 100) })
+    </script>
+    <link rel="stylesheet" href="../../assets/css/tables.css" />
+
     <title>Select | Preview Layout</title>
   </head>
   <body>
-    <div style="padding:2rem"><ul>
+    <div style="padding:2rem"><fieldset id="custom">
+  <legend>Custom controls</legend>
+  <div
+    class="select"
+    tabindex="1"
+    data-name="2A"
+    data-id="select"
+    data-autocomplete="off"
+    data-required=""
+    data-tabindex="-1"
+    style="width: 375px;"
+    data-open=""
+  >
+    <div class="header">
+      <span>Carrots</span>
+    </div>
+    <datalist style="top: 37px;display:initial">
+      <div class="option" data-value="Carrots" data-label="Carrots" tabindex="1">
+        <div class="label">Carrots</div>
+      </div>
+      <div
+        class="option"
+        data-value="Pneumonoultramicroscopicsilicovolcanoconiosis"
+        data-label="Pneumonoultramicroscopicsilicovolcanoconiosis"
+        tabindex="4"
+      >
+        <div class="label">Pneumonoultramicroscopicsilicovolcanoconiosis</div>
+      </div>
+    </datalist>
+  </div>
+</fieldset>
+
+<ul>
   <li>TODO :: caret을 background iamge로</li>
 </ul>
 
@@ -65,5 +105,6 @@
   <i class="textfield-suffix icon icon-caret-down">
   </i>
 </div></div>
+
   </body>
 </html>

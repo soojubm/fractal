@@ -3,24 +3,21 @@
   <li>서브메뉴 전체 노출 / 각각 노출 구조가 달라짐. </li>
 </ul>
 
-<nav class="navbar js-navbar" role="navigation">
-  {{!-- <button class="button navbar-burger js-navbar-toggle" data-size="small" aria-label="전체메뉴" aria-haspopup="true" aria-expanded="false">
-  </button> --}}
+<br />
+
+<nav class="navbar js-navbar" role="navigation" style="background:tomato">
+  {{! <button class="button navbar-burger js-navbar-toggle" data-size="small" aria-label="전체메뉴" aria-haspopup="true" aria-expanded="false">
+  </button> }}
   <a class="navbar-logo" href="#">BRAND LOGO</a>
   <div class="navbar-menu">
-    <a href="#"> Patterns </a>
-    <a href="#">
-      Tokens
-      <test-icon name="nav-arrow-down"></test-icon>
-    </a>
-    <a href="signifier.html">Signifier</a>
+    <a href="#"> menuitem1 </a>
+    <a href="#">menuitem2</a>
+    <a href="#">menuitem3</a>
   </div>
   <div class="navbar-user">
     <div class="textfield" data-size="small">
-    {{!-- <label class="textfield-label" for="id">검색 필드</label> --}}
-      <i class="textfield-prefix">
-        <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="m17 8-5-5-5 5M17 16l-5 5-5-5"></path></svg>
-      </i>
+      {{! <label class="textfield-label" for="id">검색 필드</label> }}
+      <i class="textfield-prefix"></i>
       <input class="textfield-input" type="search" id="id" placeholder="이름이나 장소로 검색" autocomplete="off" />
     </div>
     <button>알림</button>

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <link rel="stylesheet" href="../../assets/css/fractal.css" />
+    <link rel="stylesheet" href="../../assets/css/breadcrumb.css" />
 
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
@@ -35,10 +36,24 @@
     <link rel="stylesheet" href="../../assets/css/empty-state.css" />
     <link rel="stylesheet" href="../../assets/css/step.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+    <script>
+      window.addEventListener('load', () => { setTimeout(() => { new DataTable('#example'); }, 100) })
+    </script>
+    <link rel="stylesheet" href="../../assets/css/tables.css" />
+
     <title>Default | Preview Layout</title>
   </head>
   <body>
-    <div style="padding:2rem"><div class="tile">
+    <div style="padding:2rem"><ul>
+  <li>내부 간격inset</li>
+  <li>radius</li>
+  <li>background</li>
+  <li>surface</li>
+</ul>
+<hr data-space="large" />
+<div class="tile">
   <h5>tile? box? paper?</h5>
   <p style="margin:.5rem 0 0;">flatted(가칭): 카드의 컨테이너, elevated(가칭): 다이얼로그나 드롭다운의 컨테이너로 쓸 수 있다. </p>
 </div>
@@ -47,6 +62,11 @@
   <h5>tile? box? paper?</h5>
   <p style="margin:.5rem 0 0;">elevation은 border + shadow로 만들 수 있기 때문에 토큰 이름을 shadow로 하는 것이 조금 더 좋다는 생각. 그림자를 중첩할
     수 있기 때문에 그림자로 border를 만든다면 elevation도 괜찮은.</p>
-</div></div>
+</div>
+<br />
+<form class="grid-filter" style="padding:1rem;">
+  grid filter
+</form></div>
+
   </body>
 </html>

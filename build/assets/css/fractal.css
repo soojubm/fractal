@@ -1,6 +1,14 @@
-.component-group {
+/* .component-group {
   padding: 1.5rem 0;
   border-top: var(--border);
 }
 .component-group + .component-group {
 }
+
+.component-group.group {
+  flex-wrap: wrap;
+}
+.component-group p {
+  width: 100%;
+  margin-top: -0.5rem;
+} */

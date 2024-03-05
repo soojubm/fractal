@@ -1,25 +1,32 @@
 
 
 <ul>
-  <li>48 large, 40 medium, 32 small, 20px tiny? </li>
+  <li>icon(24/20/16)과 icon button(56/48/40/32/24)을 구분한다.</li>
   <li>20px은 component 페이지에 정의되어 있지 않지만 리액션 버튼에서 사용 중.</li>
-  <li>icon과 icon button의 구분</li>
-  <li>사이즈는 전체적으로 textfield / button / icon button 정도는 동일해야 함.</li>
-  <li>TODO variant와 상태의 통합. (button, icon button, chip)</li>
+  <li>사이즈는 전체적으로 textfield / button / icon button 정도는 동일하면 좋다. (+ 상태, 형태)</li>
 </ul>
-
 <br />
-
-<div class="component-group group">
-  <div class="icon icon-system-verified"></div>
-  <div class="icon icon-system-warning"></div>
-  <div class="icon icon-caret-down"></div>
-  <div class="icon icon-home"></div>
-  <div class="icon icon-search"></div>
-  <div class="icon icon-clear"></div>
-  <div class="icon icon-close"></div>
-</div>
-
+<p class="text">사용중인 아이콘</p>
+<section class="tile" data-variant="outlined">
+  <div class="group">
+    <div class="icon icon-system-verified"></div>
+    <div class="icon icon-system-warning"></div>
+    <div class="icon icon-caret-down"></div>
+    <div class="icon icon-home"></div>
+    <div class="icon icon-search"></div>
+    <div class="icon icon-clear"></div>
+    <div class="icon icon-close"></div>
+  </div>
+</section>
+<br />
+<section class="tile" data-variant="outlined">
+  <div class="group">
+    <div class="icon icon-home" data-size="16"></div>
+    <div class="icon icon-home" data-size="20"></div>
+    <div class="icon icon-home" data-size="24"></div>
+  </div>
+</section>
+<br />
 <div class="group" style="gap:var(--space-4)">
   <button class="icon-button" data-variant="text"></button>
   <button class="icon-button" data-variant="text" disabled></button>

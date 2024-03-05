@@ -13,17 +13,24 @@
   color: var(--chip-color-text);
   position: relative;
 
-  /* TODO donesnt using ? for chip in textfield  */
-  outline: 2px solid var(--color-background);
   --chip-size: var(--size-small);
   --chip-height: 0;
   --chip-inset: null;
   --chip-radius: 0;
 }
-.chip:focus {
+.chip:focus-visible {
   outline: 3px solid var(--color-point);
 }
 
+.chip .avatar {
+  margin: 0 0 0 -12px;
+}
+
+.chip .icon {
+  margin: 0 -4px;
+}
+
+/* variant */
 .chip[data-variant="lined"]:hover {
   background: rgba(36, 38, 40, 0.05);
 }
@@ -62,12 +69,4 @@
 .chip[data-status="selected"] {
   border: none;
   background: var(--color-semantic-primary-subtle);
-}
-
-.chip .avatar {
-  margin: 0 0 0 -12px;
-}
-
-.chip .icon {
-  margin: 0 -4px;
 }

@@ -26,6 +26,7 @@ fieldset,
 iframe,
 img,
 hr {
+  margin: 0;
   border: none;
 }
 main,
@@ -293,15 +294,14 @@ dl dd {
   }
 }
 
-
-
 .board {
   margin: 32px 0 24px;
   border-top: 3px solid #333538;
 
   --board-inset: 24px;
 }
-.board-head {}
+.board-head {
+}
 .board-head-row {
   display: flex;
   align-items: center;
@@ -313,10 +313,14 @@ dl dd {
 .board-body {
   padding: 24px;
 }
+.board-body p + p {
+  margin: 1rem 0 0;
+}
 .board-foot {
   border-top: var(--border);
 }
-.board-foot nav {}
+.board-foot nav {
+}
 .board-foot nav button {
   display: flex;
   align-items: center;

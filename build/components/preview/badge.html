@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <link rel="stylesheet" href="../../assets/css/fractal.css" />
+    <link rel="stylesheet" href="../../assets/css/breadcrumb.css" />
 
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
@@ -35,42 +36,58 @@
     <link rel="stylesheet" href="../../assets/css/empty-state.css" />
     <link rel="stylesheet" href="../../assets/css/step.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+    <script>
+      window.addEventListener('load', () => { setTimeout(() => { new DataTable('#example'); }, 100) })
+    </script>
+    <link rel="stylesheet" href="../../assets/css/tables.css" />
+
     <title>Default | Preview Layout</title>
   </head>
   <body>
     <div style="padding:2rem"><ul>
-  <li>status/ category는 다양함.</li>
+  <li>variant: 'filled' | 'subtle' | 'lined'</li>
+  <li>shape: 'ghost' | </li>
+  <li>size: </li>
+  <li>status badge / category badge which is clickable?</li>
 </ul>
+<br />
+<section class="tile" data-variant="outlined">
+  <div class="group">
+    <em class="badge" data-variant="filled">variant filled</em>
+    <em class="badge" data-variant="subtle">variant subtle</em>
+    <em class="badge" data-variant="lined">variant lined</em>
+  </div>
+</section>
+<br />
+<section class="tile" data-variant="outlined">
+  <div class="group">
+    <em class="badge" data-size="medium">size medium</em>
+    <em class="badge" data-size="small">size small</em>
+    <em class="badge" data-size="tiny">size tiny</em>
+  </div>
+</section>
+<br />
+<section class="tile" data-variant="outlined">
+  <div class="group">
+    <em class="badge" data-variant="positive">status positive</em>
+    <em class="badge" data-variant="warning">status warning</em>
+    <em class="badge" data-variant="negative">status negative</em>
+  </div>
+</section>
+<br />
+<section class="tile" data-variant="outlined">
+  <div class="group" data-variant="loose">
+    <em class="badge" data-variant="positive" data-shape="ghost" data-badge="true">
+      with badge
+    </em>
+    <em class="badge" data-variant="warning" data-shape="ghost" data-badge="true">with badge</em>
+    <em class="badge" data-variant="negative" data-shape="ghost" data-badge="true">with badge</em>
+    <em class="badge" data-variant="information" data-shape="ghost" data-badge="true">with badge</em>
+    <em class="badge" data-variant="standby" data-shape="ghost" data-badge="true">with badge</em>
+  </div>
+</section></div>
 
-<br />
-
-<div class="group">
-  <em class="badge" data-variant="filled">variant filled</em>
-  <em class="badge" data-variant="subtle">variant subtle</em>
-  <em class="badge" data-variant="lined">variant lined</em>
-</div>
-<br />
-<div class="group">
-  <em class="badge" data-variant="positive">status positive</em>
-  <em class="badge" data-variant="warning">status warning</em>
-  <em class="badge" data-variant="negative">status negative</em>
-</div>
-<br />
-<div class="group">
-  <em class="badge" data-variant="positive" data-shape="square" data-badge="true">
-    with badge
-  </em>
-  <em class="badge" data-variant="warning" data-shape="circle" data-badge="true">with badge</em>
-  <em class="badge" data-variant="negative" data-shape="ghost" data-badge="true">with badge</em>
-  <em class="badge" data-variant="information" data-shape="ghost" data-badge="true">with badge</em>
-  <em class="badge" data-variant="standby" data-shape="ghost" data-badge="true">with badge</em>
-</div>
-<br />
-<div class="group">
-  <em class="badge" data-size="medium">size medium</em>
-  <em class="badge" data-size="small">size small</em>
-  <em class="badge" data-size="tiny">size tiny</em>
-</div>
-<br /></div>
   </body>
 </html>

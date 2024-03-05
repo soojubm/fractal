@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <link rel="stylesheet" href="../../assets/css/fractal.css" />
+    <link rel="stylesheet" href="../../assets/css/breadcrumb.css" />
 
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
@@ -35,6 +36,13 @@
     <link rel="stylesheet" href="../../assets/css/empty-state.css" />
     <link rel="stylesheet" href="../../assets/css/step.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+    <script>
+      window.addEventListener('load', () => { setTimeout(() => { new DataTable('#example'); }, 100) })
+    </script>
+    <link rel="stylesheet" href="../../assets/css/tables.css" />
+
     <title>Tailing | Preview Layout</title>
   </head>
   <body>
@@ -52,5 +60,6 @@
     <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" stroke-width="1.5" viewBox="0 0 24 24" color="#000000"><path stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"></path></svg>
   </i>
 </button></div>
+
   </body>
 </html>

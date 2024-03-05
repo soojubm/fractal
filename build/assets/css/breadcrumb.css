@@ -1,0 +1,16 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+.breadcrumb-item {
+  padding: 0 var(--space-1);
+  line-height: 16px;
+  color: var(--color-content-tertiary);
+}
+.breadcrumb-divider {
+  width: 12px;
+}
+.breadcrumb-item[aria-current="page"] {
+  color: var(--color-content-priamry);
+}

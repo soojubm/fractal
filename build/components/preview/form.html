@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <link rel="stylesheet" href="../../assets/css/fractal.css" />
+    <link rel="stylesheet" href="../../assets/css/breadcrumb.css" />
 
     <link rel="stylesheet" href="../../assets/css/avatar.css" />
     <link rel="stylesheet" href="../../assets/css/button.css" />
@@ -35,6 +36,13 @@
     <link rel="stylesheet" href="../../assets/css/empty-state.css" />
     <link rel="stylesheet" href="../../assets/css/step.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.8/datatables.min.js"></script>
+    <script>
+      window.addEventListener('load', () => { setTimeout(() => { new DataTable('#example'); }, 100) })
+    </script>
+    <link rel="stylesheet" href="../../assets/css/tables.css" />
+
     <title>Default | Preview Layout</title>
   </head>
   <body>
@@ -44,20 +52,20 @@
       <h2 class="text" variant="heading4">상품선택 <em>*</em></h2>
       <p class="text" variant="label2" style="margin-top:var(--space-1);">필수 입력 사항이며, 여러 개를 선택할 수 있습니다.</p>
     </header>
-    <fieldset class="checkbox-group" style="display:flex;flex-wrap:wrap;margin:var(--space-6) 0 var(--space-8);">
-      <div class="checkbox" style="width:50%;">
+    <fieldset class="checkbox-group" style="display: grid;grid-template-columns: repeat(2, 1fr);gap:1rem;margin:var(--space-6) 0 var(--space-8);">
+      <div class="checkbox" data-variant="plain">
         <input type="checkbox" id="checkbox" />
         <label for="checkbox">A 상품 선택</label>
       </div>
-      <div class="checkbox" style="width:50%;">
+      <div class="checkbox" data-variant="plain">
         <input type="checkbox" id="checkbox" />
         <label for="checkbox">A 상품 선택</label>
       </div>
-      <div class="checkbox" style="width:50%;">
+      <div class="checkbox" data-variant="plain">
         <input type="checkbox" id="checkbox" />
         <label for="checkbox">A 상품 선택</label>
       </div>
-      <div class="checkbox" style="width:50%;">
+      <div class="checkbox" data-variant="plain">
         <input type="checkbox" id="checkbox" />
         <label for="checkbox">A 상품 선택</label>
       </div>
@@ -69,23 +77,23 @@
     <header>
       <h2 class="text" variant="heading4">이용약관동의 <em>*</em></h2>
     </header>
-    <fieldset class="checkbox-group" style="display:flex;flex-direction:column;margin:var(--space-2) 0 var(--space-8);">
-      <div class="checkbox">
+    <fieldset class="checkbox-group" style="display:flex;flex-direction:column;gap:4px;margin:var(--space-2) 0 var(--space-8);">
+      <div class="checkbox" style="height: 32px;">
         <input type="checkbox" id="checkbox21" />
         <label for="checkbox21"><b>모두 동의합니다.</b></label>
       </div>
       <hr />
-      <div class="checkbox" data-variant="plain">
+      <div class="checkbox" data-variant="plain" style="height: 32px;">
         <input type="checkbox" id="checkbox22" />
         <label for="checkbox22">(필수)마케팅 수신, 개인정보 제공 동의</label>
         <a class="checkbox-link" href="">링크</a>
       </div>
-      <div class="checkbox" data-variant="plain">
+      <div class="checkbox" data-variant="plain" style="height: 32px;">
         <input type="checkbox" id="checkbox23" />
         <label for="checkbox23">(선택)마케팅 수신, 개인정보 제공 동의</label>
         <a class="checkbox-link" href="">링크</a>
       </div>
-      <div class="checkbox" data-variant="plain">
+      <div class="checkbox" data-variant="plain" style="height: 32px;">
         <input type="checkbox" id="checkbox24" />
         <label for="checkbox24">(선택)마케팅 수신, 개인정보 제공 동의</label>
         <a class="checkbox-link" href="">링크</a>
@@ -98,5 +106,6 @@
     <button class="button" data-variant="primary" style="width:100%;max-width:320px;">문의하기</button>
   </div>
 </form></div>
+
   </body>
 </html>
