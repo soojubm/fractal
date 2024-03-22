@@ -50,13 +50,13 @@
   <li>모바일 친화적이지 않음</li>
   <li>작은 공간에 너무 많은 인풋이 들어가거나 하나의 칼럼만 남은 경우의 예외 처리. 크기의 변화가 너무 다이내믹함.</li>
   <li>한 번에 너무 많은 입력을 받기 때문에 개발이 어렵고 오류가 발생할 가능성이 크다.</li>
-  <li><del>홀수 칼럼 고아로 남았을 때 비어있는 tr을 넣어주어야 합니다.</del></li>
 </ul>
 <br />
 <section>
 
-<table> <caption>Favorite and Least Favorite Things</caption> <tr> <th></th><th></th> <th>Bob</th> <th>Alice</th> </tr> <tr> <th rowspan="2">Favorite</th> <th>Color</th> <td>Blue</td> <td>Purple</td> </tr> <tr> <th>Flavor</th> <td>Banana</td> <td>Chocolate</td> </tr> <tr> <th rowspan="2">Least Favorite</th> <th>Color</th> <td>Yellow</td> <td>Pink</td> </tr> <tr> <th>Flavor</th> <td>Mint</td> <td>Walnut</td> </tr> </table>
-
+  <style>
+    table {border-collapse: collapse;} td {border:var(--border);}
+  </style>
 
 
   <header style="padding:20px 24px;background:#eee;border-radius:8px 8px 0 0;border-bottom:var(--border);">
@@ -64,15 +64,15 @@
   </header>
   <table class="list" style="max-width:1520px;">
     <tr>
-      <th rowspan="2">제목</th>
-      <th>질문내용</th>
-      <td>
+      <th rowspan="2">1</th>
+      <th>2</th>
+      <td colspan="2">
         중간에 1칼럼이 들어갈 때
       </td>
     </tr>
     <tr>
-      <th>질문내용</th>
-      <td>
+      <th>2</th>
+      <td colspan="2">
         <div class="group" style="gap:2rem;">
           <div class="textfield" data-size="small" data-label="false" style="display:flex;align-items:center;gap: 1rem;">
             <label class="textfield-label" for="id" style="margin-bottom:0;font-weight:normal;font-size:14px;">답변유형</label>
@@ -96,8 +96,30 @@
       </td>
     </tr>
     <tr>
-      <th>질문내용</th>
-      <th></th>
+      <th rowspan="4">1</th>
+      <th>2</th>
+      <td colspan="2">
+        댑스가 3개일 때
+      </td>
+    </tr>
+    <tr>
+      <th rowspan="3">2</th>
+      <td colspan="2">
+        <div class="textfield" data-size="small">
+          <input class="textfield-input" type="text" id="textfield1" placeholder="test" />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>
+        <div class="textfield" data-size="small">
+          <input class="textfield-input" type="text" id="textfield1" placeholder="test" />
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th>3</th>
       <td>
         <div class="textfield" data-size="small">
           <input class="textfield-input" type="text" id="textfield1" placeholder="test" />

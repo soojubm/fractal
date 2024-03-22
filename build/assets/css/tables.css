@@ -22,6 +22,26 @@
 :root.dark {
   --dt-html-background: rgb(33, 37, 41);
 }
+
+.test-table {
+}
+.test-table table {
+  border-collapse: collapse;
+}
+.test-table table tr {
+}
+.test-table table tr th {
+  width: 10%;
+  padding: var(--table-cell-padding);
+  border: var(--border);
+  background-color: var(--table-head-background);
+}
+.test-table table tr td {
+  width: 10%;
+  padding: var(--table-cell-padding);
+  border: var(--border);
+}
+
 table.dataTable td.dt-control {
   text-align: center;
   cursor: pointer;
