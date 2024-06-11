@@ -1,23 +1,65 @@
-<form class="file" method="" enctype="multipart/form-data">
-  <b class="text file-title">첨부파일</b>
-  <p class="text file-description">파일당 최대 50MB, 총 10건까지 등록 가능합니다. Description 영역</p>
-  <div class="file-upload">
-    <p>파일을 여기로 끓어다 놓거나, 파일선택 버튼을 클릭해 업로드할 파일을 선택하세요.</p>
-    {{! <button class="button" data-variant="primary">파일 선택</button> }}
-    <input class="file-input" type="file" id="file2" />
-    <label class="file-label" for="file2">파일 선택</label>
+<div class="tile" data-variant="outlined">
+  <div>
+    <div class="file1" data-variant="input">
+      <input class="file-input1" type="file" id="file2" value="파일선택" />
+      <label class="file-label1" for="file2"></label>
+      <span class="file-placeholder">파일선택</span>
+      <span class="file-value">첨부파일_01.jpg</span>
+      <div>
+        <button><i class="icon icon-close"></i></button>
+        <span></span>
+      </div>
+    </div>
+    <span>2MB이내로 등록해 주세요.</span>
   </div>
+  <br />
+  <div class="file1" style="border: 0;padding: 0;">
+    <input class="file-input1" type="file" id="file2" />
+    <label class="file-label1" for="file2"></label>
+    <button class="button" data-variant="tertiary">파일첨부</button>
+    <span>5MB이내, png, jpg 파일만 등록 가능</span>
+  </div>
+  <br />
+  <div class="file1">
+    <input class="file-input1" type="file" id="file2" />
+    <label class="file-label1" for="file2"></label>
+    <button class="button" data-variant="tertiary">파일첨부</button>
+    <span>5MB이내, png, jpg 파일만 등록 가능</span>
+  </div>
+  <p class="text-feedback" role="status">용량을 초과하였습니다.</p>
+</div>
 
-  <section class="file-attachment">
-    {{! <b class="file-attachment-title">첨부한 파일</b> }}
-    <div class="file-attachment-item">
-      <span>첨부파일_01.jpg</span>
-      <i>icon</i>
+<br />
+
+<div class="tile" data-variant="outlined">
+  <form class="file" method="" enctype="multipart/form-data">
+    <b class="text file-title">첨부파일</b>
+    <p class="text file-description">파일당 최대 50MB, 총 10건까지 등록 가능합니다. Description 영역</p>
+    <div class="file-upload">
+      <p>파일을 여기로 끓어다 놓거나, 파일선택 버튼을 클릭해 업로드할 파일을 선택하세요.</p>
+      {{! <button class="button" data-variant="primary">파일 선택</button> }}
+      <input class="" type="file" id="file2" />
+      <label class="file-label" for="file2">파일첨부</label>
     </div>
-    <div class="file-attachment-item">
-      <span>첨부파일_01.jpg</span>
-      <i>icon</i>
-    </div>
-    <p class="text-feedback" role="status">용량을 초과하였습니다.</p>
-  </section>
-</form>
+
+    <section class="file-attachment">
+      {{! <b class="file-attachment-title">첨부한 파일</b> }}
+      <div class="file-attachment-item">
+        <span>첨부파일_01.jpg</span>
+        <button><i class="icon icon-close"></i></button>
+      </div>
+      <div class="file-attachment-item">
+        <span>첨부파일_01.jpg</span>
+        <i class="icon icon-system-verified"></i>
+      </div>
+      <div class="file-attachment-item" data-status="fail">
+        <span>첨부파일_01.jpg</span>
+        <div class="group">
+          <i class="icon icon-system-warning"></i>
+          <button><i class="icon icon-close"></i></button>
+        </div>
+      </div>
+      <p class="text-feedback" role="status">용량을 초과하였습니다.</p>
+    </section>
+  </form>
+</div>

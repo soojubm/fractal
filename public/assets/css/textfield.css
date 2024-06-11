@@ -173,6 +173,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .textfield-prefix {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: var(--textfield-size);
   height: var(--textfield-size);
   position: absolute;
@@ -332,7 +333,6 @@ input.textfield-input:read-only:not(:disabled) {
   outline: 0;
 }
 
-
-.textfield[data-label=false] .textfield-suffix {
+.textfield[data-label="false"] .textfield-suffix {
   top: 0;
 }

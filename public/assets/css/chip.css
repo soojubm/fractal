@@ -22,6 +22,11 @@
   outline: 3px solid var(--color-point);
 }
 
+.chip:active {
+  box-shadow: 0px 8px 24px -4px #00000026;
+  box-shadow: 0px 2px 4px 0px #0000000d;
+}
+
 .chip .avatar {
   margin: 0 0 0 -12px;
 }

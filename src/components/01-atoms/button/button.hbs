@@ -1,12 +1,10 @@
 {{!-- <div class="group" role="group">
   <button class="button" data-variant="primary" data-size="{{size}}" data-status="">{{label}}</button>
   <button class="button" data-variant="{{variant}}" data-size="{{size}}" data-status="">{{label}}</button>
-
   <button class="button" data-variant="tertiary" data-size="small">{{label}}</button>
   <button class="button" data-variant="tertiary" data-size="tiny">{{label}}</button>
 </div>
  --}}
-
 <ul>
   <li>--button-min-width: 5rem;</li>
   <li>--button-height: 40px;</li>
@@ -15,50 +13,81 @@
   <li>--button-font-weight: var(--font-weight-bold);</li>
   <li>--button-background-color: null;</li>
   <li>TODO 버튼 형태의 input type=file</li>
+  <li>filled-primary vs variant and color</li>
 </ul>
-
 <br />
-
 <section class="tile" data-variant="outlined">
-  <div class="group" role="group">
-    <button class="button" data-variant="lined" data-size="large">Lined</button>
-    <button class="button" data-variant="lined" data-size="medium">Lined</button>
-    <button class="button" data-variant="lined" data-size="small">Lined</button>
-    <button class="button" data-variant="lined" data-size="tiny">Lined</button>
-  </div>
-
-  <br />
-
   <div class="group" role="group">
     <button class="button" data-variant="filled" data-size="large">Filled</button>
     <button class="button" data-variant="filled" data-size="medium">Filled</button>
     <button class="button" data-variant="filled" data-size="small">Filled</button>
     <button class="button" data-variant="filled" data-size="tiny">Filled</button>
   </div>
-
   <br />
-
+  <div class="group" role="group">
+    <button class="button" data-variant="filled" data-color="secondary" data-size="large">Filled</button>
+    <button class="button" data-variant="filled" data-color="secondary" data-size="medium">Filled</button>
+    <button class="button" data-variant="filled" data-color="secondary" data-size="small">Filled</button>
+    <button class="button" data-variant="filled" data-color="secondary" data-size="tiny">Filled</button>
+  </div>
+  <br />
+  <div class="group" role="group">
+    <button class="button" data-variant="filled" data-color="tertiary" data-size="large">Filled</button>
+    <button class="button" data-variant="filled" data-color="tertiary" data-size="medium">Filled</button>
+    <button class="button" data-variant="filled" data-color="tertiary" data-size="small">Filled</button>
+    <button class="button" data-variant="filled" data-color="tertiary" data-size="tiny">Filled</button>
+  </div>
+</section>
+<br />
+<section class="tile" data-variant="outlined">
+  <div class="group" role="group">
+    <button class="button" data-variant="lined" data-color="primary" data-size="large">Lined</button>
+    <button class="button" data-variant="lined" data-color="primary" data-size="medium">Lined</button>
+    <button class="button" data-variant="lined" data-color="primary" data-size="small">Lined</button>
+    <button class="button" data-variant="lined" data-color="primary" data-size="tiny">Lined</button>
+  </div>
+  <br />
+  <div class="group" role="group">
+    <button class="button" data-variant="lined" data-size="large">Lined</button>
+    <button class="button" data-variant="lined" data-size="medium">Lined</button>
+    <button class="button" data-variant="lined" data-size="small">Lined</button>
+    <button class="button" data-variant="lined" data-size="tiny">Lined</button>
+  </div>
+</section>
+<br />
+<section class="tile" data-variant="outlined">
   <div class="group" role="group">
     <button class="button" data-variant="subtle" data-size="large">Subtle</button>
     <button class="button" data-variant="subtle" data-size="medium">Subtle</button>
     <button class="button" data-variant="subtle" data-size="small">Subtle</button>
     <button class="button" data-variant="subtle" data-size="tiny">Subtle</button>
   </div>
-
-  <br />
-
+</section>
+<br />
+<section class="tile" data-variant="outlined">
   <div class="group" role="group">
-    <button class="button" data-variant="text" data-size="large">Text</button>
-    <button class="button" data-variant="text" data-size="medium">Text</button>
-    <button class="button" data-variant="text" data-size="small">Text</button>
-    <button class="button" data-variant="text" data-size="tiny">Text</button>
+    <button class="button" data-variant="text" data-size="large">Ghost</button>
+    <button class="button" data-variant="text" data-size="medium">Ghost</button>
+    <button class="button" data-variant="text" data-size="small">Ghost</button>
+    <button class="button" data-variant="text" data-size="tiny">Ghost</button>
   </div>
-
-  <br />
-
+</section>
+<br />
+<section class="tile" data-variant="outlined">
   <div class="group" role="group" data-segmented>
-    <button class="button" data-variant="subtle" data-size="tiny" data-selected="true">Segmented</button>
-    <button class="button" data-variant="subtle" data-size="tiny">Segmented</button>
-    <button class="button" data-variant="subtle" data-size="tiny">Segmented</button>
+    <button class="button" data-variant="subtle" data-size="medium" data-selected="true">Segmented</button>
+    <button class="button" data-variant="subtle" data-size="medium">Segmented</button>
+    <button class="button" data-variant="subtle" data-size="medium">Segmented</button>
+  </div>
+</section>
+<br />
+<section class="tile" data-variant="outlined">
+  <div class="group" style="gap:var(--space-4)">
+    <button class="button" data-variant="filled" style="min-width: var(--button-size);min-width:40px;padding:0;border-radius:50%;">
+      <i class="icon icon-home"></i>
+    </button>
+    <button class="button" data-variant="lined"><i class="icon icon-home"></i></button>
+    <button class="button" data-variant="subtle"><i class="icon icon-home"></i></button>
+    <button class="button" data-variant="text"><i class="icon icon-home"></i></button>
   </div>
 </section>

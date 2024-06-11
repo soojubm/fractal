@@ -1,0 +1,84 @@
+/* tabs */
+.tablist {
+  display: flex;
+  max-width: 240px;
+  margin: 0 auto;
+  /* margin:0 0 var(--space-3) 0; */
+  /* padding: var(--space-1); */
+  border-radius: var(--radius);
+  background: var(--color-background-weak);
+  position: relative;
+}
+[role="tabpanel"][aria-hidden="false"] {
+  display: block;
+}
+[role="tabpanel"][aria-hidden="true"] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: auto;
+  width: 100%;
+  /* width - tabSlot */
+  height: var(--size-8);
+  color: var(--color-text-light);
+  position: relative;
+  z-index: 1;
+}
+.tab[aria-selected="true"] {
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+}
+
+.tab-label {
+  padding: 0 0 var(--adjust-label-line) 0;
+}
+
+.tab-indicator {
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: var(--color-background);
+  /* box-shadow: var(--shadow); */
+  border: 2px solid var(--color-background-weak);
+  box-sizing: border-box;
+  border-radius: var(--radius);
+  position: absolute;
+  transition: all var(--duration);
+}
+
+.tab:nth-child(1):active ~ .tab-indicator {
+  transform: translateX(calc(70px * 1));
+}
+.tab:nth-child(2):active ~ .tab-indicator {
+  transform: translateX(100%);
+}
+
+.tablist1 {
+  display: flex;
+  gap: 1px;
+  /* border-bottom: var(--border); */
+}
+.tablist1 .tab1 {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: 120px;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background-color: var(--color-background-weak);
+  color: var(--color-text-light);
+  position: relative;
+  z-index: 1;
+}
+.tablist1 .tab1[aria-selected="true"] {
+  background: crimson;
+  color: #fff;
+}
+.tablist1 .tab1 button {
+  margin-left: auto;
+}
